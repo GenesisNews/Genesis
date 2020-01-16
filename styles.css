@@ -1,8 +1,9 @@
 .part{
-    border: 1px solid gray;
+    border: 1px solid #D8D8D8;
     border-radius:  25px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
     flex: 1;
-    margin: 5px;
+    margin: 9px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +28,7 @@
     font-size: 18px;
     font-weight: normal;
     font-family: 'Bree Serif', serif;
-    background-color: lightyellow;
+    background-color: #F4F4F3;
     text-align: center;
     margin-top: 0;
     margin-left: 0.5px;
@@ -42,10 +43,10 @@
 }
 
 .text {
-    margin: 20px 20px 20px 20px;
+    margin: 10px 20px 10px 20px;
     line-height:1.5;
     font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;
 }
 
@@ -54,7 +55,7 @@ ul{
 }
 
 ul li::before {
-    content: '■';
+    content: '▮';
     font-weight: bolder;
     display: inline-block;
     width: 0.8em;
@@ -83,15 +84,14 @@ ul li::before {
      font-size: 20px;
      margin: 20px 20px 20px 20px;
      font-weight: bolder;
-     font-family: 'Ubuntu', sans-serif;
+     font-family: 'Montserrat', sans-serif;
 
      }
 
  .news-header{
      font-size: 16px;
      margin: 20px 20px 0px 20px;
-     font-family: 'Ubuntu', sans-serif;
-
+     font-family: 'Montserrat', sans-serif;
 
  }
 
@@ -99,15 +99,15 @@ ul li::before {
     margin: 0px 20px 20px 20px;
     line-height:1.5;
     font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: justify;
 
  }
 
 .haber-link {
      font-weight: bold;
-     color: rgb(0, 95, 236);
-     font-family: 'Ubuntu', sans-serif;
+     color :#00A2FF;
+     font-family: 'Montserrat', sans-serif;
 
  }
 
@@ -122,7 +122,7 @@ ul li::before {
      color: black;
      font-size: 24px;
      font-weight: bold;
-     font-family: 'Ubuntu', sans-serif;
+     font-family: 'Montserrat', sans-serif;
  }
 
  .tercihleriniz{
@@ -130,7 +130,7 @@ ul li::before {
      text-align: center;
      color: gray;
      margin-bottom: 5px;
-     font-family: 'Ubuntu', sans-serif;
+     font-family: 'Montserrat', sans-serif;
  }
 
  .tarz-bir {
@@ -183,7 +183,7 @@ ul li::before {
     max-height: 40px;
     border: 0;
     align-items: center;
-    border: 0.5px solid gray;
+    border: 0.5px solid #D8D8D8;
     border-radius: 10px;
     margin: 5px;
 }
@@ -191,7 +191,7 @@ ul li::before {
  .logolar {
      max-height: 80px;
      max-width: 80px;
-     border: 0.5px solid gray;
+     border: 0.5px solid #D8D8D8;
      border-radius: 10px;
      margin: 10px;
 }
@@ -203,4 +203,11 @@ ul li::before {
     font-weight: bold;
     font-family: 'Bree Serif', serif;
     margin-bottom: 5px;
+}
+
+.ok {
+    text-decoration: none;
+    font-weight: bolder;
+    color: gray;
+    font-size: 20px;
 }
