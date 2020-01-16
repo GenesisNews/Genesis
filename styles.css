@@ -85,6 +85,7 @@ ul li::before {
      margin: 20px 20px 20px 20px;
      font-weight: bolder;
      font-family: 'Montserrat', sans-serif;
+     text-align: justify;
 
      }
 
@@ -131,6 +132,7 @@ ul li::before {
      color: gray;
      margin-bottom: 5px;
      font-family: 'Montserrat', sans-serif;
+     margin: 5px;
  }
 
  .tarz-bir {
