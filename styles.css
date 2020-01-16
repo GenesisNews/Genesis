@@ -165,10 +165,6 @@ ul li::before {
     border-radius: 25px 25px 0 0; 
  }
 
- a{
-     color: maroon;
- }
-
  .mail {
      text-align: center;
      color: gray;
