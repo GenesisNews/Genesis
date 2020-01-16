@@ -10,14 +10,14 @@
 
 
 .main-header{
-    font-size: 56px;
+    font-size: 60px;
     font-weight: bolder;
     font-family: 'Lobster Two', cursive;
     text-align: center;
     margin: 0px;
     margin-left: 0.5px;
     margin-right: 0.5px;
-    padding: 20px;
+    padding: 25px;
     background-image: linear-gradient(khaki, khaki, lightyellow );
     border-radius: 22px 22px 0px 0px;
     color: black;
@@ -35,6 +35,10 @@
     padding: 8px;
     border-radius: 0 0 4px 4px;
     color: black;
+}
+
+.tarih{
+    font-size: 12px;
 }
 
 .text {
