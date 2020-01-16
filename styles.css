@@ -93,6 +93,8 @@ ul li::before {
      font-size: 16px;
      margin: 20px 20px 0px 20px;
      font-family: 'Montserrat', sans-serif;
+     text-align: justify;
+
 
  }
 
@@ -124,6 +126,9 @@ ul li::before {
      font-size: 24px;
      font-weight: bold;
      font-family: 'Montserrat', sans-serif;
+     margin: 2px;
+     text-align: justify;
+
  }
 
  .tercihleriniz{
@@ -133,6 +138,8 @@ ul li::before {
      margin-bottom: 5px;
      font-family: 'Montserrat', sans-serif;
      margin: 5px;
+     text-align: justify;
+
  }
 
  .tarz-bir {
