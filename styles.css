@@ -123,11 +123,10 @@ ul li::before {
  .bize-ulaşın{
      text-align: center;
      color: black;
-     font-size: 24px;
+     font-size: 32px;
      font-weight: bold;
      font-family: 'Montserrat', sans-serif;
-     margin: 2px;
-     text-align: justify;
+     margin: 20px;
 
  }
 
@@ -138,7 +137,6 @@ ul li::before {
      margin-bottom: 5px;
      font-family: 'Montserrat', sans-serif;
      margin: 5px;
-
  }
 
  .tarz-bir {
@@ -183,21 +181,22 @@ ul li::before {
  }
 
 .sosyal-medya {
-    max-width: 40px;
-    max-height: 40px;
+    max-width: 45px;
+    max-height: 45px;
     border: 0;
     align-items: center;
     border: 0.5px solid #D8D8D8;
     border-radius: 10px;
     margin: 5px;
+    margin-bottom: 10px;
 }
 
  .logolar {
-     max-height: 80px;
-     max-width: 80px;
+     max-height: 100px;
+     max-width: 100px;
      border: 0.5px solid #D8D8D8;
      border-radius: 10px;
-     margin: 10px;
+     margin: 15px;
 }
 
 .yukarı-çık{
