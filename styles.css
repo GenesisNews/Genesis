@@ -50,6 +50,11 @@
     text-align: justify;
 }
 
+.genesis {
+    color: goldenrod;
+    font-size: 12px;
+}
+
 ul{
     list-style: none;
 }
@@ -211,6 +216,6 @@ ul li::before {
 .ok {
     text-decoration: none;
     font-weight: bolder;
-    color: gray;
+    color: goldenrod;
     font-size: 20px;
 }
