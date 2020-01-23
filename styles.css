@@ -67,17 +67,49 @@ ul li::before {
     margin-left: -1em;
 }
 
+.tarz-bir {
+    background-color: #0f4d92;
+    color: #0f4d92;
+    margin: 0;
+    padding: 0;
+    border-radius: 25px 25px 0 0; 
+}
+
+.tarz-iki {
+   background-color: #216331;
+   color: #216331;
+   margin: 0 0.5px 0 0.5px;
+   padding: 0;
+   border-radius: 25px 25px 0 0; 
+}
+
+.tarz-üç {
+   background-color: #D95D39;
+   color: D95D39;
+   margin: 0 0.5px 0 0.5px;
+   padding: 0;
+   border-radius: 25px 25px 0 0; 
+}
+
+.tarz-dört {
+   background-color: #8241A0;
+   color: #8241A0;
+   margin: 0 0.5px 0 0.5px;
+   padding: 0;
+   border-radius: 25px 25px 0 0; 
+}
+
 .part-bir {
-    color: orangered;
+    color: #0f4d92;
 }
 .part-iki {
-    color: olivedrab;
+    color: #216331;
 }
 .part-üç {
-    color: dodgerblue;
+    color: #D95D39;
 }
 .part-dört{
-    color: mediumorchid;
+    color: #8241A0;
 }
  .siyahyap{
      color: black;
@@ -144,42 +176,10 @@ ul li::before {
      margin: 5px;
  }
 
- .tarz-bir {
-     background-color: orangered;
-     color: orangered;
-     margin: 0;
-     padding: 0;
-     border-radius: 25px 25px 0 0; 
- }
-
- .tarz-iki {
-    background-color: olivedrab;
-    color: olivedrab;
-    margin: 0 0.5px 0 0.5px;
-    padding: 0;
-    border-radius: 25px 25px 0 0; 
- }
-
- .tarz-üç {
-    background-color: dodgerblue;
-    color: dodgerblue;
-    margin: 0 0.5px 0 0.5px;
-    padding: 0;
-    border-radius: 25px 25px 0 0; 
- }
-
- .tarz-dört {
-    background-color: mediumorchid;
-    color: mediumorchid;
-    margin: 0 0.5px 0 0.5px;
-    padding: 0;
-    border-radius: 25px 25px 0 0; 
- }
-
  .mail {
      text-align: center;
      color: gray;
-     margin: 10px;
+     margin: 12px;
      font-style: italic;
      font-size: 12px;
      display: block;
@@ -190,7 +190,6 @@ ul li::before {
     max-height: 45px;
     border: 0;
     align-items: center;
-    border: 0.5px solid #D8D8D8;
     border-radius: 10px;
     margin: 5px;
     margin-bottom: 10px;
