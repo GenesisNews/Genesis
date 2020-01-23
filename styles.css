@@ -4,7 +4,7 @@
     box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
     flex: 1;
     margin: 9px;
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -12,16 +12,12 @@
 
 .main-header{
     font-size: 60px;
-    font-weight: bolder;
-    font-family: 'Lobster Two', cursive;
-    text-align: center;
+    flex:1;
+    width: inherit;
+    height: inherit;
     margin: 0px;
-    margin-left: 0.5px;
-    margin-right: 0.5px;
-    padding: 25px;
     background-image: linear-gradient(khaki, khaki, lightyellow );
     border-radius: 22px 22px 0px 0px;
-    color: black;
 
 }
 .sub-header{
