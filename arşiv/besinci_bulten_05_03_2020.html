@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Genesis</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <style media="screen">
+    .part {
+      border: 1px solid #D8D8D8;
+      border-radius: 25px;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+      flex: 1;
+      margin: 9px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+
+    .main-header {
+      flex: 1;
+      width: inherit;
+      height: inherit;
+      margin: 0px;
+      padding: 0px;
+      border-radius: 22px 22px 0px 0px;
+
+    }
+
+    .sub-header {
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #F4F4F3;
+      text-align: center;
+      margin-top: -5px;
+      margin-left: 0.5px;
+      margin-right: 0.5px;
+      padding: 8px;
+      border-radius: 0 0 4px 4px;
+      color: black;
+    }
+
+    .tarih {
+      font-size: 12px;
+    }
+
+    .text {
+      margin: 10px 20px 10px 20px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: inherit;
+      text-align: left;
+    }
+
+    .genesis {
+      color: goldenrod;
+      font-size: 12px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: '▮';
+      font-weight: bolder;
+      display: inline-block;
+      width: 0.8em;
+      margin-left: -1em;
+    }
+
+    .tarz-bir {
+      background-color: #8241A0;
+      color: #8241A0;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-iki {
+      background-color: #0f4d92;
+      color: #0f4d92;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-üç {
+      background-color: #216331;
+      color: #216331;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-dört {
+      background-color: #A40000;
+      color: #A40000;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-beş {
+      background-color: #D95D39;
+      color: #D95D39;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-altı {
+      background-color: #EF545F;
+      color: #EF545F;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-yedi {
+      background-color: #1DA1F2;
+      color: #1DA1F2;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-sekiz {
+      background-color: #FFAA00;
+      color: #FFAA00;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .part-bir {
+      color: #8241A0;
+    }
+
+    .part-iki {
+      color: #0f4d92;
+    }
+
+    .part-üç {
+      color: #216331;
+    }
+
+    .part-dört {
+      color: #A40000;
+    }
+
+    .part-beş {
+      color: #D95D39;
+    }
+
+    .part-altı {
+      color: #EF545F;
+    }
+
+    .part-yedi {
+      color: #1DA1F2;
+    }
+
+    .part-sekiz {
+      color: #FFAA00;
+    }
+
+    .siyahyap {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      word-spacing: 3px;
+      text-align: left;
+    }
+
+    .part-header {
+      font-size: 20px;
+      margin: 20px 20px 20px 20px;
+      font-weight: bolder;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      /* text-align: left; */
+
+    }
+
+    .news-header {
+      font-size: 16px;
+      margin: 20px 20px 0px 20px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      /* text-align: left; */
+
+
+    }
+
+    .news {
+      margin: 0px 20px 20px 20px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: inherit;
+      text-align: left;
+
+    }
+
+    .haber-link {
+      font-weight: bold;
+      color: #00A2FF;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .news::before {
+      content: "\2022";
+      font-weight: bolder;
+      display: inline-block;
+    }
+
+    .bize-ulaşın {
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px;
+
+    }
+
+    .tercihleriniz {
+      font-size: 14px;
+      text-align: center;
+      color: gray;
+      margin-bottom: 5px;
+      font-family: 'Montserrat', sans-serif;
+      margin: 5px;
+    }
+
+    .mail {
+      text-align: center;
+      color: gray;
+      margin: 12px;
+      font-style: italic;
+      font-size: 12px;
+      display: block;
+    }
+
+    .sosyal-medya {
+      max-width: 45px;
+      max-height: 45px;
+      border: 0;
+      align-items: center;
+      border-radius: 10px;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .logolar {
+      max-height: 100px;
+      max-width: 100px;
+      border: 0.5px solid #D8D8D8;
+      border-radius: 10px;
+      margin: 15px;
+    }
+
+    .yukarı-çık {
+      display: block;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: 'Bree Serif', serif;
+      margin-bottom: 5px;
+    }
+
+    .ok {
+      text-decoration: none;
+      font-weight: bolder;
+      color: goldenrod;
+      font-size: 20px;
+    }
+
+    .çubuk {
+      width: 6px;
+    }
+  </style>
+</head>
+
+<body style="text-align: inherit;text-align: left; word-spacing: 3px;">
+  <!--<body align="center" style="text-align:left; word-spacing: 3px;"> -->
+  <div style="max-width:600px;">
+    <div class="part">
+      <img id="yukarı-link" class="main-header"
+        src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/logolar/Genesis-Header.png" alt="Header">
+      <h2 class="sub-header"> HAFTALIK BLOCKCHAIN HABERLERİ <br> <em class="tarih">05.03.2020 #5</em> </h2>
+      <p class="text"> Inkube & Decons iş birliği ile hazırladığımız haftalık blockchain haber bültenimiz
+        <b>"Genesis"in</b> beşinci sayısından herkese merhabalar! Bahar ayının ilk bültenini sizlerle paylaşırken büyük bir mutluluk
+        yaşıyor, aynı zamanda ilk ayımızı beraber geçirdiğimiz tüm üyelerimize verdikleri desteklerden dolayı teşşekkür ediyoruz.
+        Bülten hakkındaki görüş ve düşüncelerinizi her zaman bizim ile paylaşabileceğinizi tekrar hatırlatmak isteriz.
+        <br>Bültenimizin yeni sayısı gelene kadar herkese blockchain dolu bir hafta diliyoruz. İyi okumalar!
+      </p>
+      <p class="text genesis"><b>Genesis</b> Bloğu: Bir blockchain ağında kaydedilen ilk bloğa verilen isimdir.
+       "Başlangıç bloğu" da denmektedir. Bültenin ismini de başlangıç bloğundan esinlenerek, çok güzel bir projenin
+       başlangıcı olduğuna inandığımız için verdik.</p>
+     <p class="text">Bu hafta <b>değindiğimiz konuları</b> aşağıda görelim.</p>
+
+
+        <table class="text" style="padding-left: 50px;" >
+          <tr>
+            <th><img class="çubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Teknoloji.png"
+                alt="teknoloji" height="25" width="6"></th>
+            <th>
+              <p> <a class="siyahyap"> Teknoloji </a></p>
+            </th>
+            <th><p> <a class="siyahyap" href="#başlık-bir"> </a></p></th>
+          </tr>
+          <tr>
+            <th><img class="çubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Pop%C3%BCler.png"
+                alt="popüler" height="25" width="6"></th>
+            <!--<th><p> <a class="siyahyap" href="#başlık-iki"> Popüler </a></p></th>-->
+            <th>
+              <p> <a class="siyahyap"> Popüler </a></p>
+            </th>
+          </tr>
+          <tr>
+            <th><img class="çubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Uygulama%20Alanlar%C4%B1.png"
+                alt="uygulama alanları" height="25" width="6"></th>
+            <th>
+              <p> <a class="siyahyap"> Uygulama Alanları </a></p>
+            </th>
+            <!--<th><p> <a class="siyahyap" href="#başlık-üç"> Uygulama Alanları </a></p></th>-->
+          </tr>
+          <tr>
+            <th><img class="çubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Reg%C3%BClasyon-Hukuk.png"
+                alt="regülatif & resmi" height="25" width="6"></th>
+            <th>
+              <p> <a class="siyahyap"> Regülatif & Resmi </a></p>
+            </th>
+            <!--<th><p> <a class="siyahyap" href="#başlık-dört"> Regülatif & Resmi </a></p></th>-->
+          </tr>
+
+          <!--<tr>
+            <th><img class="çubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Etkinlikler.png"
+                alt="etkinlik" height="25" width="6"></th>
+            <th>
+              <p> <a class="siyahyap"> Etkinlik </a></p>
+            </th>
+          </tr>
+        -->
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Akademik%20Ara%C5%9Ft%C4%B1rma.png"
+              alt="akademik & araştırma" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Akademik & Araştırma </a></p>
+          </th>
+        </tr>
+
+          <tr>
+            <th><img class="çubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/E%C4%9Fitimler.png"
+                alt="eğitim" height="25" width="6"></th>
+            <th>
+              <p> <a class="siyahyap"> Eğitim </a></p>
+            </th>
+          </tr>
+
+
+
+
+            <!--
+            <tr style="height: 25;">
+                <th><img class="çubuk" src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Anket.png" alt="anket" height="25" width="6"></th>
+                <th><p> <a class="siyahyap" href="#başlık-sekiz"> Anket </a></p></th>
+            </tr style="height: 25">
+          -->
+
+        </table>
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-bir">.</h4>
+      <h1 id="başlık-bir" class="part-header part-bir"> Teknoloji </h1>
+      <article>
+        <h2 class="news-header"> Kaspersky, Blockchain Oy Verme Sistemini Oluşturuyor </h2>
+        <p class="news">Siber güvenlik şirketi <a class="haber-link" target="_blank"
+              href="https://www.blockchaintechnology-news.com/2020/02/28/kaspersky-unveils-new-blockchain-based-voting-machine-reports/"> Kaspersky</a>,
+              Polys blockchain online oylama sistemi tabanlı bir makineyi tanıttı.
+              Bu uygulama sayesinde kullanıcılar, akıllı telefonlarından dahi seçimlere katılabilecek. Böylelikle mevcut
+              seçim teknolojisine güvenilir bir alternatif oluşturulmuş olunacak. İnternet kullanmayan kişilerin sisteme nasıl
+              dahil edileceği ise bilinmiyor.
+               </article>
+             </article>
+             <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+           </div>
+
+
+    <div class="part">
+      <h4 class="tarz-iki">.</h4>
+      <h1 id="başlık-iki" class="part-header part-iki"> Popüler </h1>
+      <article>
+        <h2 class="news-header">Nestle ve Carrefour, Bebek Ürünlerinin Güvenilirliğini Takip Etmek için Blockchain Kullanacak </h2>
+        <p class="news">
+          <a class="haber-link" target="_blank"
+              href="http://www.carrefour.com/current-news/nestle-and-carrefour-apply-blockchain-technology-to-infant-nutrition-for-the-first-time">Nestle ve Carrefour</a>
+              Nestle ve Carrefour, daha önceki gıda izleme çabalarının ardından IBM’in Food Trust platformunu kullanarak bebek süt ürünlerini izleyip
+              tüketicilere ürünlerin kökenleri ve hareketleri hakkında veriler sunacak. Müşteriler QR kodlar aracılığıyla çeşitli bilgilere erişebilecek.
+              Bu gelişmelerin ardından Walmart ve Cargill gibi firmalar da blockchain kullanımı konusunda harekete geçti. Şubat ayında ise Fransa
+              Cumhurbaşkanı Macron, gıda izlenebilirliği konusundaki endişeleri gidermek için Avrupa Birliği’nde blockchain teknolojisinin daha fazla
+              kullanılması konusunda çağrıda bulunmuştu.
+               </article>
+      <article>
+        <h2 class="news-header">AKBANK, Dünyada İlki Gerçekleştirerek Bir Kripto Borsası ile Anlaşan İlk Banka Oldu</h2>
+        <p class="news"> Kripto para borsası devi Binance, AKBANK ile anlaşmaya vardı Böylelikle AKBANK,
+        bir kripto borsası ile anlaşan <a class="haber-link" target="_blank"
+            href="https://www.webtekno.com/akbank-binance-kripto-para-anlasmasi-h86982.html"> ilk banka </a> oldu. Yapılan anlaşmaya göre Türk lirası bazında havale ve EFT
+            işlemleri kolayca yapılabilecek. Ayrıca Türkiye’de Binance üzerinden kripto işlemleri yapmak da kolaylaşacak.
+            Öncesinde Türkiye’deki kripto para kullanıcıları yurt dışındaki borsalarda işlem yapabiliyordu ancak bu işlemler
+            zahmetli bir sürecin ardından gerçekleşiyordu. Akbank daha önce de Ripple ile bir anlaşma yapmıştı. </p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-üç">.</h4>
+      <h1 id="başlık-üç" class="part-header part-üç"> Uygulama Alanları </h1>
+      <article>
+        <h2 class="news-header"> JPEG Kuruluşu, Görsel Hırsızlığını Doğrulamak için Blockchain Teknolojisini Kullanılabilir </h2>
+        <p class="news">86. <a class="haber-link" target="_blank" href="https://jpeg.org/items/20200217_press.html"> JPEG </a>
+             toplantısı, Sydney-Avustralya’da yapıldı. Toplantıda yerel paydaşların da tartışmaya davet edildiği, blockchain hakkında Açık Tartışma Oturumu
+             düzenlendi ve blockchain, akıllı sözleşmeler, yönetim, yasal boyut, gizlilik gibi uygulama alanlarına odaklanıldı. JPEG, blockchainin güvenilir medya
+             işlemlerini sağlamada büyük bir potansiyeli olduğunu belirtti. Korunan görüntülerin bir arada çalışabilirliğini sağlamayı hedefleyerek endüstri ile
+             etkileşime geçip süreci yönetmeye yardımcı olacak ve kullanım durumlarının belirlenmesine yardımcı olacak çeşitli atölyeler düzenleyip blockchain planlarını
+             ileri götürmeyi hedefleniyor.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Aeron, Havacılığı Blockchain ile Şifrelemeyi Planlıyor </h2>
+        <p class="news">Pilotlar, havacılık mühendisleri ve meraklılardan oluşan bir ekip tarafından kurulan Aeron; 2016 yılından beri <a class="haber-link" target="_blank"
+            href="https://cointelegraph.com/news/company-says-its-aim-is-to-encrypt-the-sky-on-a-blockchain"> havacılık endüstrisinde </a>  veren
+            güvenliği artırmak için blockchaini kullanmayı planlıyordu ancak bu düşünce çeşitli ürün ve hizmetlerde faydalanma fikrine dönüştü.
+            Aeron, bu doğrultuda uçuş rezervasyonu yapmaya ve tüm dünyada uçuş okulları bulmaya yarayan bir portal olan Aerotrips.com’u tanıttı.
+            Şirkete göre Aerotrips.com sadece bir portal değil, büyük borsalarda yer eden Aeron (ARN) tokeni desteğiyle ekosistemin merkezi olacak.
+            Ayrıca uçuş günlüğü kayıtlarını tutan Aeron Pilot uygulaması çeşitli dijital mağazalarda kullanıma sunuldu.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Randstad, Yetenekleri İşverenlerle Eşleştirmek için Blockchaini Kullanıyor </h2>
+        <p class="news">Dünyanın en büyük <a class="haber-link" target="_blank" href="https://cloud.google.com/customers/randstad/"> insan kaynakları </a>
+            şirketlerinden olan Randstad, yetenekleri kurumsal ihtiyaçlar ile daha verimli eşleştirerek daha katma değerli işler
+            yapmak için Cypherium blockchaini ve Google Cloud’un bir kombinasyonunu kullanıyor. Randstad’ın yaptığı bir araştırmaya
+            göre blockchain teknolojisi kişisel verilerin güvenli bir şekilde korunmasını ve yeteneklerin doğrulanmasını sağlıyor.
+            Randstad'ın küresel iş birliği yöneticisi Frank van der Bijl, “Google Cloud ve G Suite bizi bazı manuel doğrulama
+            görevlerinden zaten kurtardı ve Cypherium’un blockchainini bu işlemleri daha da hızlandırmak için kullanmayı planlıyoruz.” dedi.
+        </p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-dört">.</h4>
+      <h1 id="başlık-dört" class="part-header part-dört"> Regülatif & Resmi </h1>
+      <article>
+        <h2 class="news-header"> Alman Hükümeti, Kripto Paraları Resmen Finansal Enstrümanlar Olarak Değerlendiriyor </h2>
+        <p class="news"> Almanya Federal Finansal Denetleme Kurumu (BaFiN), kripto paralar ve muhafaza şirketleri hakkında <a class="haber-link" target="_blank"
+            href="https://blockchain.news/news/german-financial-regulator-officially-classifies-cryptocurrencies-as-financial-instruments"> kararlar </a>
+          içeren yeni bir yönetmelik yayınladı. Yeni yönetmeliğe göre kripto paraların hiçbir yere bağlı olmadığı, garanti edilmemiş ve yasal olarak
+          belirlenmiş hiçbir para statüsüne sahip olmayan bir değer olduğu ancak kişiler arasında takas aracı olarak kullanılıp elektronik olarak
+          iletilebileceği belirtildi. Artık kripto muhafaza hizmeti sunan şirketler lisans başvurularının ardından ceza almadan devam edebilecek.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Çin, Blockchain Tabanlı Faturalandırma Sistemini Pekin’de Uygulamaya Başlıyor </h2>
+        <p class="news">Çin’in başkenti Pekin’in Belediye Vergi Dairesi, maliyetleri azaltmayı hedefleyen blockchain tabanlı elektronik <a class="haber-link" target="_blank"
+            href="http://beijing.chinatax.gov.cn/bjswjwz/xxgk/tzgg/202003/t20200302_447896.html"> faturalama </a>
+          sistemini 2 Mart’tan itibaren başlattı. İlk blockchain faturası ise bir park servisi operatörü tarafından kesildi. Bu uygulama ile işletme maliyetlerinin
+          düşürülmesi, kaynakların korunması, tüketicilerin faturaları kolayca takip edebilmesi hedefleniyor. Kurumlar bu uygulamaya ülke genelinde teşvik edilecek.
+          İlk blockchain tabanlı faturalama ise Haziran 2018’de Guangzhou’da yapılmıştı.</p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-yedi">.</h4>
+      <h1 id="başlık-yedi" class="part-header part-yedi"> Akademik & Araştırma </h1>
+      <article>
+        <h2 class="news-header"> Son On Yıl İçinde 24 Kripto Ağında 3.1 Milyardan Fazla İşlem Yapıldı </h2>
+        <p class="news"> Ethereum mempoolunu kullanan, San Fransisco merkezli startup <a class="haber-link" target="_blank"
+            href="https://www.theblockcrypto.com/post/56751/over-3-1-billion-transactions-have-been-processed-across-24-crypto-networks-researchers">Blocknative</a>;
+          24 kripto ağı üzerindeki tüm işlemleri sayan bir araştırma yaptı. Bu araştırmaya göre, 24 ağ üzerinde 2009 ile 2019 yılları arasında
+          toplam işlem değeri 4.6 trilyon doları bulan 3.1 milyarın üzerinde işlem gerçekleşti. Sonuçların göze çarpan tarafı ise bu işlemlerin
+          %96’lık bölümünün yalnızca son 2 yılda yapılmış olması. Yayınlanan veriler ayrıca 2019 yılında 259.2 milyon bitcoin işlemini 242.8 milyon
+          ethereum işleminin takip ettiğini gösteriyor. Ekibe göre 2023’ten itibaren kripto işlemleri yıllık 1 milyar işlem sayısını geçecek.</p>
+      </article>
+      <!--<a class="yukarı-çık ok" href="#yukarı-link"> ^</a>-->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-altı">.</h4>
+      <h1 id="başlık-altı" class="part-header part-altı"> Eğitim </h1>
+      <h2 class="news-header"> 2020’de Okunacak En İyi 5 Blockchain E-Kitabı Listelendi </h2>
+      <p class="news"> CNN, Forbes ve INC'de yer alan BookAuthority; 2020 yılına dair okunması gereken en önemli 5 Satoshi Nakamoto e-Kitaplarını yayınladı.
+        Listede 2 Türk yazarında yer aldığı (Saadettin Konukseven & Tuna Özen) beş e-kitaplık okuma <a class="haber-link" target="_blank"
+          href="https://bookauthority.org/books/new-satoshi-nakamoto-ebooks"> listesi</a> her ay milyonlarca tarafsız verileriye ve alanında uzman
+          kişilerin tavsiyeleri göz önünde bulundurularak hazırlanmaktadır.</p>
+    </article>
+    </div>
+
+
+
+    <!-- BURADAKİ OK KALKACAK
+    <div class="part">
+        <h4 class="tarz-sekiz">.</h4>
+        <h1 id="başlık-sekiz" class="part-header part-sekiz"> Anket </h1>
+
+        <a class="yukarı-çık ok" href="#yukarı-link"> ^</a>
+    </div>
+  -->
+
+    <div class="part">
+      <h1 class="bize-ulaşın"> Bize Ulaşın </h1>
+      <div>
+        <a href="http://www.twitter.com/genesisBChain/" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Twitter'da Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-twitter.png">
+        </a>
+        <a href="http://www.instagram.com/genesisblockchain/" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Instagram" alt="Instagram'da Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-instagram.png">
+        </a>
+        <a href="http://www.linkedin.com/company/genesisblockchain/" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Linkedin" alt="LinkedIn'de Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-linkedin.png">
+        </a>
+
+      </div>
+      <p class="tercihleriniz"><a class="tercihleriniz" href="mailto:?subject=Genesis&nbspBlockchain&nbspHaber&nbspBülteni&body=Merhabalar.&nbspGenesis,&nbspblockchain&nbsphakkında&nbspdünyada&nbspve&nbspTürkiye'deki&amp;nbspönemli&nbsphaberlerin&nbsptoplandığı&nbsphaftalık&nbspbir&nbsphaber&nbspbültenidir.&nbspKaydolmak&nbspiçin&nbsplinke&nbsptıklayabilirsiniz.&nbspKayıt&nbspLinki:&nbspgenesisnews.co">Mail ile Paylaşın</a></p>
+      <p class="tercihleriniz"><a class="tercihleriniz"
+          href="https://wa.me/?text=Haftalık%20blockchain%20haber%20bülteni%20www.genesisnews.co"> Whatsapp'ta Paylaşın </a></p><a class="tercihleriniz" target="_blank" href="mailto:info@genesisnews.co?subject=Geri&nbspBildirim"> Görüşleriniz Bizle Paylaşın</a>
+
+      <div>
+        <a href="http://www.instagram.com/inkube/" style="text-decoration:none;" target="_blank">
+          <img class="inkube logolar" style="max-width:150px;" title="Inkube-Instagram" alt="Inkube Logo"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-inkube.png">
+        </a>
+        <a href="http://www.instagram.com/deconsensus/" style="text-decoration:none;" target="_blank">
+          <img class="decons logolar" style="max-width:150px;" title="Decons-Instagram" alt="Decons Logo"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-decons.png">
+        </a>
+        <!-- <br>
+        <a href="30_01_2020.html">Önceki Bülten</a>
+        <a href="#">Sonraki Bülten</a>
+        <br>
+        <br>-->
+      </div>
+    </div>
+  </div>
+</body>
+</html>
