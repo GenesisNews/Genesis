@@ -61,7 +61,7 @@
     }
 
     .genesis {
-      color: goldenrod;
+      margin-top: 15px;
       font-size: 12px;
     }
 
@@ -212,7 +212,6 @@
 
     .haber-link {
       font-weight: bold;
-      color: #00A2FF;
       font-family: 'Montserrat', sans-serif;
 
     }
@@ -290,12 +289,12 @@
     }
 
     .haber-gorseli-sabit {
-        object-fit: cover;
-        width: 90%;
-        height: 100px;
-        margin: 0px 5px 5px 5px;
-        border-radius: 10px;
-      }
+      object-fit: cover;
+      width: 90%;
+      height: 100px;
+      margin: 0px 5px 5px 5px;
+      border-radius: 10px;
+    }
 
     @media only screen and (min-width: 768px) {
 
@@ -308,15 +307,60 @@
       .haber-gorseli {
         object-fit: cover;
         width: 30%;
-        margin:  0px 20px 20px 20px;
+        margin: 0px 20px 20px 20px;
         border-radius: 10px;
         margin-left: 5px;
       }
 
       .gif {
-        margin:  40px 10px 10px 10px;
+        margin: 40px 10px 10px 10px;
         margin-left: -10px;
         width: 200px;
+        border-radius: 10px;
+      }
+
+      /* Beğen Butonu Style*/
+      .control-me::after {
+        content: url(https://raw.githubusercontent.com/GenesisNews/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/tp-appls.png);
+      }
+
+      #like:checked~.control-me::after {
+        content: url(https://raw.githubusercontent.com/GenesisNews/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/ylw-appls.png);
+      }
+
+      .control-me {
+        margin: 5px;
+      }
+
+      label {
+        background: #ffc402;
+        border: 1px solid #D8D8D8;
+        padding: 5px 8px;
+        border-radius: 25px;
+        margin-left: 20px;
+      }
+
+      label:active {
+        background: #D8D8D8;
+      }
+
+      .visually-hidden {
+        position: absolute;
+        left: -100vw;
+      }
+
+      .like-div {
+        height: 20px;
+        margin: 0;
+        place-items: center;
+        text-align: center;
+        font: bold 12px -system-ui, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+      }
+
+      img.like-div {
+        max-width: 10px;
       }
     }
 
@@ -339,6 +383,7 @@
       .gif {
         margin: -10px;
         width: 200px;
+        border-radius: 10px;
 
       }
     }
@@ -351,28 +396,21 @@
     <div class="part">
       <img id="yukarı-link" class="main-header"
         src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/logolar/Genesis-Header.png" alt="Header">
-      <h2 class="sub-header"> HAFTALIK BLOCKCHAIN HABERLERİ <br> <em class="tarih">09.04.2020 #10</em> <br> <a
+      <h2 class="sub-header"> HAFTALIK BLOCKCHAIN HABERLERİ <br> <em class="tarih">11.04.2020 #11</em> <br> <a
           style="font-weight: bold; font-size: 12px; color: goldenrod;" target="_blank"
           href="https://dar.vin/genesis-arsiv">BÜLTEN ARŞİVİMİZ</a> </h2>
-
+      <!--
       <p class="text"> Haftalık blockchain haber bültenimiz
-        <b>"Genesis"</b>in onuncu sayısından herkese merhabalar! Bu hafta bültenimize birkaç yenilik getirerek yine bir
-        çok alandan çeşitli haberlerle
-        karşınızdayız. Girdiğiniz platforma göre bazı haberlerimizin yanında veya altında çeşitli görseller yer alacak,
-        bunlardan birisi de birbirinden eğlenceli gifler olacak. Ayrıca artık yukarıda yer alan arşiv butona tıklayarak
-        önceki bültenlerimize erişebilirsiniz.<br>
-        Uzaktan eğitimin okullarda devam ettiği bu günlerde, eğer siz de internet üzerinden mini bir
-        blockchain hukuğu eğitimi almak isterseniz "Eğitim" bölümümüzü, Sandbox gifini görmek için "Uygulama Alanları"
-        bölümümüzü, en ilgi çekici
-        olduğunu
-        düşündüğümüz haber, GitHub'ın Bitcoin kodlarını buz dağına gömmesi, için ise "Popüler" bölümümüzü
-        inceleyebilirsiniz.
+        <b>"Genesis"</b>in on birinci sayısından herkese merhabalar! Bu hafta da ilgi çekici haberler ve faydalı
+        olduğunu düşündüğümüz iki online etkinlikle karşınızdayız. Sosyal izolasyon döneminde verimli zaman geçirmek
+        adına katılmanızı öneriyoruz.
         <br>Bültenimizin yeni sayısı gelene kadar herkese blockchain dolu ve sağlıklı bir hafta diliyoruz. İyi okumalar!
         <b style="color: goldenrod;">#EvdeKal</b>
       </p>
-      <p class="text genesis"><b>Genesis</b> Bloğu: Bir blockchain ağında kaydedilen ilk bloğa verilen isimdir.
-        "Başlangıç bloğu" da denmektedir. Bültenin ismini de başlangıç bloğundan esinlenerek, çok güzel bir projenin
-        başlangıcı olduğuna inandığımız için verdik.</p>
+      -->
+      <p class="text genesis"><b style="color: goldenrod;">Genesis</b> Bloğu: Bir blockchain ağında kaydedilen ilk bloğa
+        verilen isimdir.
+        "Başlangıç bloğu" da denmektedir.</p>
       <p class="text">Bu hafta <b>değindiğimiz konuları</b> aşağıda görelim.</p>
 
 
@@ -418,16 +456,16 @@
           </th>-->
         </tr>
 
-        <!--<tr>
-            <th><img class="çubuk"
-                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Etkinlikler.png"
-                alt="etkinlik" height="25" width="6"></th>
-            <th>
-              <p> <a class="siyahyap"> Etkinlik </a></p>
-            </th>
-          </tr>-->
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Etkinlikler.png"
+              alt="etkinlik" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Etkinlik </a></p>
+          </th>
+        </tr>
 
-
+        <!--
         <tr>
           <th><img class="çubuk"
               src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/E%C4%9Fitimler.png"
@@ -436,7 +474,7 @@
             <p> <a class="siyahyap"> Eğitim </a></p>
           </th>
         </tr>
-
+        -->
         <!--
         <tr>
           <th><img class="çubuk"
@@ -471,23 +509,47 @@
       <h4 class="tarz-bir">.</h4>
       <h1 id="başlık-bir" class="part-header part-bir"> Teknoloji </h1>
       <article>
-        <h2 class="news-header"> General Motors, Blockchain Harita Takip Sistemi Geliştiriyor</h2><br>
+        <h2 class="news-header"> HTC, Exodus Akıllı Telefonlarına Monero (XMR) için Kripto Madenciliği Getiriyor </h2>
+        <br>
         <div class="resimli-haber">
-          <p class="news"> Forbes tarafından yayınlanan makaleye göre otomotiv devi General
-            Motors, çevreye dair çeşitli
-            verileri sensörler aracılığıyla toplayarak bölgenin analizini yapacak blockchain destekli bir <a
-              class="haber-link" target="_blank"
-              href="https://www.cryptopolitan.com/blockchain-map-tracking-by-general-motors/">harita takip</a>
-            sistemi
-            için patent başvurusunda bulundu. Bu analiz esnasındaki olası uyuşmazlıkları tespit edecek dedektör ise
-            bulgularını blockchain üzerine kaydedecek ve belli mekanlara ait arazi bilgileri güncel bir şekilde
-            takip
-            edilebilecek. Bu projenin sadece navigasyon bilgileriyle çalışan otomatik pilot sistemleri için büyük
-            fayda
-            sağlayacağı düşünülüyor. </p>
-          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
-            src="https://egirisim.com/wp-content/uploads/2020/02/yandex-haritalar-api-696x392.jpeg" alt="map">
+          <p class="news"> Tayvanlı tüketici elektroniği devi HTC, <a class="haber-link part-bir" target="_blank"
+              href="https://dailyhodl.com/2020/04/10/consumer-electronics-giant-htc-bringing-crypto-mining-to-exodus-smartphones-for-monero-xmr/">Exodus</a>
+            isimli akıllı telefonuna kripto madenciliği getiriyor. Blockchain özellikli cihaz, kullanıcıların doğrudan
+            gizlilik kripto parası Monero (XMR) kullanmasına izin verecek. Kullanıcılar DeMiner adlı uygulamayı
+            indirerek yeni kripto madenciliği
+            özelliğine erişebilecek. Midas Labs tarafından geliştirilen uygulama, merkezi olmayan madenciliği çok daha
+            düşük maliyetli ve rekabetçi hale getirmek için her kullanıcıya bir masaüstü bilgisayarın madencilik gücünü
+            verecek. Bu sayede akıllı telefon aracılığıyla çok daha az elektrik tüketerek madencilik yapılabilecek ve
+            kripto madenciliği daha ulaşılabilir olacak. Uygulamanın 2020'nin ikinci çeyreğinde piyasaya sürülmesi
+            planlanıyor.
+          </p>
+          <img class="haber-gorseli part-bir" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://cdn.webtekno.com/media/cache/content_detail/article/90248/htc-exodus-akilli-telefonlarla-kripto-para-monero-madenciligi-yapilabilecek-1586955308.jpg"
+            alt="Haber Görseli">
         </div>
+        <div class="like-div" style="margin-top: -10px;">
+          </br>
+          <label for="like">Beğen</label>
+
+          <input type="checkbox" id="like" class="visually-hidden">
+
+          <div class="control-me"></div>
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Çevrimiçi Video Paylaşım Platformu iQiyi,
+          Blockchain Kullanacak </h2><br>
+        <p class="news"> Dünyanın en büyük video paylaşım platformlarından biri olan <a class="haber-link part-bir"
+            target="_blank"
+            href="https://www.coindesk.com/baidu-owned-video-streaming-giant-iqiyi-taps-public-blockchain-for-performance-boost">iQiyi</a>,
+          bant genişliği paylaşımını
+          sağlayacak halka açık bir blockchain sistemi sayesinde kullanıcı deneyimini geliştirmeyi planlıyor.
+          Geliştirdiği
+          sistemde “edge computing” teknolojisini de kullanacak platform, enerji tüketimini ve ağ tıkanıklığını
+          azaltmaya
+          yardımcı olacak eşler arası “New Kind of Network (NKN)” sayesinde performansta büyük bir artışa gitmeyi
+          hedefliyor.
+        </p>
       </article>
       <!--<a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
     </div>
@@ -496,31 +558,49 @@
       <h4 class="tarz-iki">.</h4>
       <h1 id="başlık-iki" class="part-header part-iki"> Popüler </h1>
       <article>
-        <h2 class="news-header"> GitHub, Bitcoin Kodlarını Kuzey Kutup Dağına Gömecek </h2><br>
-        <p class="news"> Dünyadaki bilginin büyük bir kısmının geçici depolama ortamlarında saklanmasının risk teşkil
-          ettiğini düşünen Github, çeşitli kuruluşların ortaklığıyla Bitcoin dahil olmak üzere birçok açık kaynaklı
-          yazılımın kaynak kodlarını koruyabilmek amacıyla yazılımların çeşitli veri formlarında ve çok sayıda kopya
-          oluşturularak Kuzey Kutbundaki “Svalbard” <a class="haber-link" target="_blank"
-            href="https://archiveprogram.github.com/">buz dağında</a>
-          saklanmasını hedefleyen “GitHub Arşiv Programı” adlı bir proje başlattı. Bu proje sayesinde, verilerin 1000
-          yıldan daha uzun süre korunması hedefleniyor.
+        <h2 class="news-header"> Visa, Yeni Bitcoin Ödül Kartını Destekliyor </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Alışveriş esnasında kullanıcılara Bitcoin ödülleri sunan Lightning cüzdanı uyumlu mobil
+            uygulama Fold, uygulamanın perakendecilerle yapılan alışverişlerdeki <a class="haber-link part-iki"
+              target="_blank"
+              href="https://cointelegraph.com/news/visa-backs-new-bitcoin-rewards-card-from-lightning-friendly-fold">ödüllerin</a>
+            verilmesini sağlayacak bir
+            Visa logolu bir kart çıkarmak üzere Visa’nın “Fintech Fast Track” programına katıldı. Uygulama şu anda
+            Amazozon, Uber ve Starbucks gibi yerlerde hesaplarını kredi kartı veya Lightning cüzdanı ile senkronize
+            ederek Bitcoin’in fiat para yerine kullanılmasına olanak sağlıyor. Fold CEO'su Will Reeves, Visa
+            ortaklığıyla gelecek yenilikleri işaret ederek “Büyük borsalar tarafından çıkarılan kartlar, kripto paranızı
+            harcarken vergi ödemeyi de gerektirirken bizim kartımız dolar harcayarak Bitcoin kazanmanızı sağlıyor.”
+            dedi.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://www.coinkolik.com/wp-content/uploads/2020/02/Bitcoin-ve-Visa-696x435.jpg" alt="Haber Görseli">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Blockchain Şirketi Nym’nin Gizlilik Mixneti Kullanıcı Testlerine Açıldı </h2><br>
+        <p class="news"> İsviçreli blockchain şirketi Nym Technologies, kullanıcıları mixnet platformunun testlerine
+          katılmaya davet etti. Mixnet’in <a class="haber-link part-iki" target="_blank"
+            href="https://cointelegraph.com/news/nym-blockchain-privacy-mixnet-opens-for-user-testing">gizlilik</a>
+          altyapısı, bireyleri kitlesel gözetimden korumayı vaat ediyor. Nym,
+          oluşturdukları mixnetin; VPN'lerin ve Tor'un aksine tüm ağı pasif olarak izleyebilen Ulusal Güvenlik Ajansı
+          seviyesindeki bir gözetimi bile yenebileceğini ve internet trafiğini verileriniz açığa çıkmadan özgür bir
+          kullanım deneyimleteceğini iddia ediyor. Ayrıca şirket, gelişmiş gizlilik hizmetleri sunmak isteyen tüm
+          blockchain ve uygulamaların ağa entegre olmasına izin verecek.
         </p>
       </article>
       <article>
-        <h2 class="news-header"> Sandbox’un Blockchain Destekli Oyunu Land’e ATARI Ortaklığı Damga Vurdu </h2><br>
-        <div class="resimli-haber">
-          <p class="news"> Sandbox’un “metaverse”inde satın alınabilen bir sanal gayrimenkul olan, oyun ve varlıklar ile
-            doldurulmak gibi çeşitli kullanımlara sahip, Ethereum platformunda oluşturulmuş ERC-721 (benzersiz) tokenlar
-            <a class="haber-link" target="_blank"
-              href="https://medium.com/sandbox-game/the-sandbox-land-presale-round-3-is-sold-out-dae38cd58fce">"Land"</a>ın
-            üçüncü ön satışı başladıktan sonra neredeyse 30
-            dakika içerisinde üst sınıra ulaşılması ile tamamlandı. Sandbox’ın başta ATARI olmak üzere 19 yeni ortağını
-            duyurduğu ön satış turu, daha az Land teklif edilmesine rağmen önceki turlara göre çok daha kısa sürede
-            tamamlanmasıyla dikkat çekti. Ayrıca ATARI’nin Land ortaklığına girmesiyle oyuna nostaljik ATARI modları
-            ekleneceğinin duyurulması da heyecan yarattı.
-          </p>
-          <img class="gif" style="max-height: 200px;max-height: 200px;" src="https://www.sandbox.game/img/17_Sand/ChestBig.gif" alt="sandbox-gif">
-        </div>
+        <h2 class="news-header"> Venezuela'da Artık SMS ile Kripto Para Gönderilebilecek </h2><br>
+        <img class="haber-gorseli-sabit" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+          src="https://mk0coinnouncemdktlrl.kinstacdn.com/wp-content/uploads/2020/03/venezuela-flag-1280x720-1.jpg"
+          alt="Haber Görseli">
+        <p class="news"> Venezuela’daki yerel bir borsa Criptolago, devrim niteliğindeki yeniliğini duyurduğu
+          açıklamasında;
+          ülkede internet olmadan <a class="haber-link part-iki" target="_blank"
+            href="https://www.cryptopolitan.com/send-crypto-without-internet/">SMS</a> aracılığıyla kripto para
+          göndermenin mümkün olacağını duyurdu. Bu gelişme, internet yaygınlığının düşük seviyede olduğu ülkede kripto
+          benimsenmesini artırmak için önemli bir strateji olabilir. Ülkenin yerel kripto parası Petro ile uyumlu
+          çevrimdışı ödeme sistemleri de bulunuyor.
+        </p>
       </article>
       <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
     </div>
@@ -529,70 +609,55 @@
       <h4 class="tarz-üç">.</h4>
       <h1 id="başlık-üç" class="part-header part-üç"> Uygulama Alanları </h1>
       <article>
-        <h2 class="news-header"> BMW Parça İzlenebilirliği İçin Tedarik Zinciri Blockchainini Genişletiyor </h2><br>
+        <h2 class="news-header"> Reddit, Yeni Token Bazlı Puan Sistemi için Ethereum Kullanabilir </h2><br>
         <div class="resimli-haber">
-          <p class="news"> Alman otomobil devi <a class="haber-link" target="_blank"
-              href="https://www.ledgerinsights.com/bmw-blockchain-supply-chain-parts-traceability/">BMW</a>,
-            uluslararası
-            tedarik
-            zincirindeki bileşenlerin izlenebilirliğini sağlamak için kullandığı, geçtiğimiz yıl pilot olarak
-            kullanılmaya
-            başlanan blockchain projesi PartChain’i duyurdu. Şirket projeden yararlanarak bir parçanın başlangıçtan
-            fabrikaya kadar olan yolculuğunu izlemeyi hedefliyor. Şirket yöneticilerinden Andreas Wendt, projenin satın
-            almada dijitalleşmenin bir üst seviyeye taşımak için tasarlandığını söyledi ve hedeflerinin tedarik
-            zincirlerindeki verilerin güvenli bir şekilde paylaşılmasını sağlayacak açık bir platform oluşturmak
-            olduğunu
-            sözlerine ekledi.
-          </p>
-          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;" src="https://i2.alfi.lt/5336/4/44.jpg" alt="bmw">
+          <p class="news"> Bir kullanıcı tarafından paylaşılan bir gönderi ve şirket sözcüsü tarafından yapılan
+            onaylamaya
+            göre Reddit, topluluklarının ön plandaki kullanıcılarına ekstra avantajlar sağlayacak “Community Points”
+            adlı sistemi test ediyor. Ethereum’un ERC-20 token standardı kullanılarak üretileceği tahmin edilen <a
+              class="haber-link part-üç" target="_blank" href="https://www.reddit.com/r/CryptoCurrency/">"topluluk
+              puanı"</a>
+            tokenlarının kontrolünün Reddit’in elinde olamaması sebebiyle kullanıcılar güvenli bir şekilde premium
+            üyelik satın almadan biriktirdikleri tokenlar sayesinde platformun ekstra özelliklerini kullanabilme şansına
+            sahip olabilir. </p>
+          <img class="gif" style="max-height: 200px;max-height: 200px;"
+            src="https://thumbs.gfycat.com/FlawedBlackAlaskankleekai-size_restricted.gif" alt="Haber Gifi">
         </div>
       </article>
       <article>
-        <h2 class="news-header"> Yeni Blockchain Projesi Kullanıcıların Yenilenebilir Enerji Kaynaklarını Seçmelerini
-          Sağlıyor </h2><br>
-        <p class="news"> Avustralyalı blockchain firması Power Ledger ve Fransız yeşil enerji perakendecisi ekWateur,
-          tüketicilerin yapacakları seçimlerin <a class="haber-link" target="_blank"
-            href="https://cointelegraph.com/news/new-blockchain-project-lets-users-choose-their-renewable-energy-source">sürdürülebilir
-            enerji</a>
-          kaynaklarının kullanımına geçişi teşvik edebileceğini düşünüyor. Yeni ortaklık, ekWakteur’un Fransa
-          genelindeki
-          elektrik sayacı ağının, Power Ledger’ın Vision adındaki yeni blockchain özellikli aracına bağlamasını
-          kapsayacak. Yapılan duyuruda, yeni cihaz sayesinde neredeyse çeyrek milyon haneye, blockchain teknolojisi
-          aracılığıyla güvenli bir şekilde kullanacakları enerji kaynaklarını özelleştirme ve takip etme fırsatı
-          sunacaklarını açıkladı.
-        </p>
-      </article>
-      <article>
-        <h2 class="news-header"> Havacılık Sektörü, Blockchain ile 300 Milyon Sterlinlik Tasarruf Sağlayacak </h2><br>
-        <p class="news"> Blockchain teknolojisinin havacılık sektöründe verimi nasıl artırabileceğine dair yapılan
-          çalışmalarda, <a class="haber-link" target="_blank"
-            href="https://www.computerweekly.com/news/252480993/Air-industry-eyes-over-300m-savings-through-blockchain-for-cargo-efficiency">kargo
-            yüklerinin</a> farklı noktalarda zincire
-          kaydedilip takip edilmesinin 300 milyon sterlinden daha fazla miktarda tasarruf sağlayabileceği ortaya
-          çıkarıldı. Kargoya ait verilerin kolayca tüm paydaşlar tarafından takip edilmesini sağlayan bu sistemle
-          taraflar
-          arasında ortaya çıkabilecek bilgi uyuşmazlıklarının önüne geçilebilecek. Kargo taşımacılığında kayda değer bir
-          sürenin evrak-kayıt işlemleriyle geçtiği düşünüldüğünde blockchainin bu konuda büyük fayda sağlayabileceği
-          tahmin ediliyor.
-        </p>
-      </article>
-      <article>
-        <h2 class="news-header"> Yayınlanan Rapora göre Enerji Piyasasında Blockchainin Payı 35 Milyar Dolara Ulaşacak
+        <h2 class="news-header"> Tayland'da Yapılan Sınır Dışı Ödemeler, Anlık Olarak Ripple ile Gerçekleştirilebilecek
         </h2><br>
-        <p class="news"> Enerji pazarında yapılan blockchain <a class="haber-link" target="_blank"
-            href="https://www.openpr.com/news/1995667/blockchain-in-energy-market-to-reach-usd-34698-million">analizi</a>,
-          tüm
-          katılımcılara; pazarın önümüzdeki yıllarda ortaya çıkması beklenen büyüme yönleri, tehditler ve kazançlı iş
-          fırsatları hakkında spesifik özellikler kazandırmayı amaçlıyor. Accenture, AWS, Bigchaindb, Deloitte, IBM,
-          Infosys, Microsoft, Nodalblock, Oracle, SAP, Enosi ve Electron gibi piyasanın en önemli oyuncularına odaklanan
-          rapora göre enerji pazarındaki küresel blockchain payının 2025 yılına kadar yaklaşık 35 milyar dolara ulaşması
-          bekleniyor. Sektörde blockchain kullanımın asıl amacının ise veri yönetimi, finansal işlemleri
-          gerçekleştirmek,
-          veri yönetimi için güvenli bir ağ oluşturmak, operasyonel maliyetleri azaltmak ve risk yönetimi şartlarını
-          iyileştirmek olduğu düşünülüyor.
+        <p class="news"> Dünya Bankası'na göre yurt dışından gelen yıllık 6,7 milyar dolar ile dünya çapındaki en iyi
+          para
+          havale merkezlerinden birisi olan <a class="haber-link part-üç" target="_blank"
+            href="https://ripple.com/insights/azimo-and-scb-runs-on-ripple-for-instant-payments-into-thailand/">Tayland</a>,
+          aynı zamanda para transferinin de en pahalı olduğu ülkelerden birisi
+          konumunda. Bu fırsatı değerlendiren dijital para transfer hizmeti Azimo, ülkenin önde gelen küresel
+          bankalarından Siam Commercial bank (SCB) ile yaptığı ortaklık sayesinde Ripple ve küresel ödeme ağı RippleNet
+          kullanarak Avrupa'dan Tayland'a anlık sınır ötesi ödemeler yapılabiliyor. Bu yeni bağlantı sayesinde, önceden
+          günler süren para transferleri anlık olarak yapılabiliyor. Gelen paralar ise kolayca Tayland bahtına
+          çevrilebilecek.
         </p>
       </article>
-
+      <article>
+        <h2 class="news-header"> Avustralya, Blockchain Kullanarak Narenciye İhracatını Takip Edecek </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Ülkedeki narenciye yetiştiricilerini temsil eden, kar amacı gütmeyen kuruluş Citrus
+            Australia;
+            Avustralya’daki <a class="haber-link" target="_blank"
+              href="https://www.ledgerinsights.com/blockchain-food-traceability-citrus-australia-exports/">narenciye</a>
+            ihracatındaki tedarik zincirini geliştirmek üzere kimlik doğrulama hizmetleri
+            sağlayıcısı Laava ID ve blockchain firması Trust Provenance ile birlikte çalışacak. Pilot projenin amacı,
+            Avustralya turunçgillerinin yaygınlığını arttırıp bu ürünlerdeki sahteciliği önlemek olacak. Laava ID’nin
+            geliştirdiği, ürünlerin ambalajında yer alacak 2 boyutlu bir görsel olan Akıllı Parmak İzi teknolojisi
+            sayesinde kullanıcılar akıllı telefonlarını kullanarak parmak izini tarayıp güvenli bir şekilde ayrıntılara
+            ulaşabilecek. Ayrıca sahte parmak izi oluşturma girişimleri de tespit edilebilecek.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="data:image/jpeg;base64,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"
+            alt="Haber Görseli">
+        </div>
+      </article>
       <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
     </div>
 
@@ -600,76 +665,61 @@
       <h4 class="tarz-dört">.</h4>
       <h1 id="bak-dört" class="part-header part-dört"> Regülatif & Resmi </h1>
       <article>
-        <h2 class="news-header"> Güney Kore, Merkeziyetsiz Kimlik Sistemi Oluşturmada Küresel Hedeflere Sahip </h2><br>
-        <p class="news"> Güney Kore’de dijital kimlik alanında çalışmak üzere oluşturulan büyük topluluk “Kore
-          Merkeziyetsiz
-          Kimlik Birliği”; geçtiğimiz yılın sonlarında kişilerin kendi <a class="haber-link" target="_blank"
-            href="https://www.ledgerinsights.com/south-korea-decentralized-identity-ambitions/ ">kimliklerini</a>
-          yönetebilmesi hedefiyle yola çıkan, fiziksel kimliği dijital kimlikle
-          ilişkilendiren sertifikasyon sistemi “Global Dijital Kimlik Birliği”ni kurmuştu. Samsung, LG gibi teknoloji
-          devlerini bünyesinde barındıran topluluk, oluşturulacak merkeziyetsiz kimlikler ile veri gizliliği ihlallerini
-          çözmeyi, temel haklara erişimi engelleyen kimlik sorunlarını ortadan kaldırmayı ve dijital kimlik
-          çalışmalarını
-          dünya geneline yayarak bu alanda öncü olmayı hedefliyor.
+        <h2 class="news-header"> G20 Hükümetleri Stablecoinler Hakkında Endişe Duyuyor </h2><br>
+        <img class="haber-gorseli-sabit" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+          src="https://raw.githubusercontent.com/GenesisNews/Genesis/master/Haber%20G%C3%B6rselleri/G20%20160420.jpg"
+          alt="Haber Görseli">
+        <p class="news"> <a class="haber-link part-dört" target="_blank"
+            href="https://www.fsb.org/wp-content/uploads/P140420-1.pdf">G20</a> hükümetleri, stablecoinlerin finansal
+          istikrara karşı risk oluşturabileceğini ve sıkı biçimde denetlenmesi gerektiğini düşünüyor. Sabit değerlere
+          sahip para birimlerindeki ufak değişimlerin bile çok kritik sonuçlar doğurabilmesi, zayıf ölçeklenme sebebiyle
+          ödeme işlemlerinde sıkıntıların yaşanabilmesi bu paralara karşı duyulan endişenin kaynağını oluşturuyor. G20
+          Finansal İstikrar Kurulu (FSB), bu tip problemlere karşı önlem almak amacıyla stablecoinlerin etkili
+          regülasyonu
+          için 10 tavsiye sundu.
         </p>
       </article>
-      <article>
-        <h2 class="news-header"> Dow Jones, Sahtekarlıkla Mücadele İçin Blockchain Tabanlı Bir Ürün Kullanıyor </h2><br>
-          <img class="haber-gorseli-sabit" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
-            src="https://raw.githubusercontent.com/GenesisNews/Genesis/master/Haber%20G%C3%B6rselleri/DowJones%20080420.jpeg"
-            alt="dow jones">
-          <p class="news"> İşletmelerin ürünlerinde blockchain kullanım oranı gittikçe artıyor. <a class="haber-link"
-              target="_blank"
-              href="https://cointelegraph.com/news/dow-jones-has-a-blockchain-based-product-for-fighting-fraud-and-staying-compliant">Dow
-              Jones</a> borsası, iş anlaşmalarında yüksek riskli üçüncü şahısları tamamlayıp işletmelerin yasal
-            uyumluluğunu kontrol edecek eş zamanlı bir blockchain izleme listesi oluşturmak amacıyla EastNets adlı bir
-            şirketle iş birliği yaptı. Bu izleme listelerinin manuel olarak güncellenmesi ve siber suçlardan korunmasına
-            olanak sağlayan uygulama için EastNets yöneticilerinden Deya Innab, oluşturdukları güvenli bir izleme
-            listesiyle
-            sektöre liderlik etmekten mutluluk duyduklarını belirtti.
-          </p>
-      </article>
-      <article>
-        <h2 class="news-header"> Brezilya Finans Regülatörleri, Blockchain Tabanlı PIER Platformunu Tanıttı </h2><br>
-        <p class="news"> Brezilya Merkez Bankası’nın geliştirdiği, finansal sistemin yetkilendirme süreçlerini ülkedeki
-          4
-          büyük finans kurumunun üçünden veri alarak düzenleyecek <a class="haber-link" target="_blank"
-            href="https://www.bcb.gov.br/detalhenoticia/431/noticia">PIER</a> uygulamasının ülke ekonomisinin yönetim
-          hızını artıracağı öngörülüyor. Finans
-          kuruluşlarındaki görevlilerin denetlenebilmesini de sağlayacak blockchain destekli bu sistem, verilerin daha
-          güvenli saklanabilmesine ve gerçek zamanlı kayıtlara saniyeler içinde ulaşılmasına imkan tanıyor.
-        </p>
-      </article>
+
       <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
     </div>
 
-    <!--
+
     <div class="part">
       <h4 class="tarz-beş">.</h4>
       <h1 id="başlık-beş" class="part-header part-beş"> Etkinlik </h1>
-
-    </div>
-  -->
-
-    <div class="part">
-      <h4 class="tarz-altı">.</h4>
-      <h1 id="başlık-altı" class="part-header part-altı"> Eğitim </h1>
       <article>
-        <h2 class="news-header"> Blockchain ve Regülasyonlar Eğitimi </h2><br>
-        <p class="news"> 14 Nisan 2020, saat 14.00’da Dr. Gürkan Avcı ve Dr. Mehmet S. Yurtçiçek’in katılımıyla
-          gerçekleştirilecek “Kripto Paralar, Blockchain ve Türkiye'yi Bekleyen Yasal Düzenlemeler” konulu etkinliğe bu
-          <a class="haber-link" target="_blank"
-            href="https://my.visme.co/projects/z4j793wv-webinar-cryptocurrencies-and-blockchain-regulations#s1 ">link</a>
-          aracılığıyla kaydolabilirsiniz.
+        <h2 class="news-header"> Virtual Blockchain Conference 2020 </h2><br>
+        <p class="news"> 23-25 Nisan tarihleri arasında <a class="haber-link part-beş" target="_blank"
+            href="https://www.virtualblockchain.io/">Miami</a> Üniversitesi Blockchain Kulübü tarafından organizasyonu
+          yapılan “Virtual Blockchain Conference 2020” Microsoft, ConsenSys, IBM gibi şirketlerden üst düzey
+          yöneticilerin
+          de yer aldığı 40’tan fazla konuşmacısıyla sanal olarak gerçekleştirilecek. Üstelik “edu” uzantılı mail
+          adresleriniz ile ücretsiz bir şekilde kaydolabilirsiniz.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Earth Day 2020 Event </h2><br>
+        <p class="news"> Kar amacı gütmeyen “Sosyal Etkide Blockchain Koalisyonu” tarafından 22 Nisan tarihinde
+          düzenlenecek, blockchainin <a class="haber-link part-beş" target="_blank"
+            href="https://www.eventbrite.com/e/earth-day-2020-virtual-event-bsic-tickets-101871570610">çevre ve
+            sosyal</a> mücadelelere entegre edilmesi konulu “Sanal Dünya Günü Etkinliği”ne ücretsiz bir şekilde
+          kaydolabilirsiniz.
         </p>
       </article>
     </div>
 
+
+    <!--
+    <div class="part">
+      <h4 class="tarz-altı">.</h4>
+      <h1 id="başlık-altı" class="part-header part-altı"> Eğitim </h1>
+
+    </div>
+  -->
     <!--
     <div class="part">
       <h4 class="tarz-yedi">.</h4>
       <h1 id="başlık-yedi" class="part-header part-yedi"> Akademik & Araştırma </h1>
-
     </div>
   -->
 
@@ -678,7 +728,6 @@
     <div class="part">
         <h4 class="tarz-sekiz">.</h4>
         <h1 id="başlık-sekiz" class="part-header part-sekiz"> Anket </h1>
-
         <a class="yukarı-çık ok" href="#yukarı-link"> ^</a>
     </div>
   -->
@@ -722,6 +771,40 @@
       </div>
     </div>
   </div>
+  <!--
+  
+RESİMSİZ HABER TEMPLATE
+<article>
+    <h2 class="news-header">  </h2><br>
+    <p class="news">
+    </p>
+    <a class="haber-link" target="_blank" href=""></a>
+</article>
+
+RESİMLİ  HABER TEMPLATE
+<article>
+        <h2 class="news-header">  </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> 
+          </p>
+          <a class="haber-link" target="_blank" href=""></a>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="" alt="Haber Görseli">
+        </div>
+</article>
+
+GİF TEMPLATE
+<article>
+        <h2 class="news-header">  </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> 
+          </p>
+          <a class="haber-link" target="_blank" href=""></a> 
+          <img class="gif" style="max-height: 200px;max-height: 200px;" src="" alt="Haber Gifi">
+        </div>
+</article>
+
+-->
 </body>
 
 </html>
