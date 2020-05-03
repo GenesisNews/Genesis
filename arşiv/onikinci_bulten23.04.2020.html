@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Genesis</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <style media="screen">
+    .part {
+      border: 1px solid #D8D8D8;
+      border-radius: 25px;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+      margin: 9px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+
+    .main-header {
+      width: inherit;
+      height: inherit;
+      margin: 0px;
+      padding: 0px;
+      border-radius: 22px 22px 0px 0px;
+
+    }
+
+    .sub-header {
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #F4F4F3;
+      text-align: center;
+      margin-top: -5px;
+      margin-bottom: -5px;
+      margin-left: 0.5px;
+      margin-right: 0.5px;
+      padding: 8px;
+      border-radius: 0 0 4px 4px;
+      color: black;
+    }
+
+
+    .tarih {
+      font-size: 12px;
+    }
+
+    .text {
+      margin: 10px 20px 10px 20px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: inherit;
+      text-align: left;
+    }
+
+    .genesis {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: '▮';
+      font-weight: bolder;
+      display: inline-block;
+      width: 0.8em;
+      margin-left: -1em;
+    }
+
+    .tarz-bir {
+      background-color: #8241A0;
+      color: #8241A0;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-iki {
+      background-color: #0f4d92;
+      color: #0f4d92;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-üç {
+      background-color: #216331;
+      color: #216331;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-dört {
+      background-color: #A40000;
+      color: #A40000;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-beş {
+      background-color: #D95D39;
+      color: #D95D39;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-altı {
+      background-color: #EF545F;
+      color: #EF545F;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-yedi {
+      background-color: #1DA1F2;
+      color: #1DA1F2;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-sekiz {
+      background-color: #FFAA00;
+      color: #FFAA00;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .part-bir {
+      color: #8241A0;
+    }
+
+    .part-iki {
+      color: #0f4d92;
+    }
+
+    .part-üç {
+      color: #216331;
+    }
+
+    .part-dört {
+      color: #A40000;
+    }
+
+    .part-beş {
+      color: #D95D39;
+    }
+
+    .part-altı {
+      color: #EF545F;
+    }
+
+    .part-yedi {
+      color: #1DA1F2;
+    }
+
+    .part-sekiz {
+      color: #FFAA00;
+    }
+
+    .siyahyap {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      word-spacing: 3px;
+      text-align: left;
+    }
+
+    .part-header {
+      font-size: 20px;
+      margin: 20px 20px 20px 20px;
+      font-weight: bolder;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      /* text-align: left; */
+
+    }
+
+    .news-header {
+      font-size: 16px;
+      margin: 20px 20px 0px 20px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      /* text-align: left; */
+
+
+    }
+
+    .news {
+      margin: 0px 20px 20px 20px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: inherit;
+      text-align: left;
+    }
+
+    .haber-link {
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .news::before {
+      content: "\2022";
+      font-weight: bolder;
+      display: inline-block;
+    }
+
+    .bize-ulaşın {
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px;
+
+    }
+
+    .tercihleriniz {
+      font-size: 14px;
+      text-align: center;
+      color: gray;
+      margin-bottom: 5px;
+      font-family: 'Montserrat', sans-serif;
+      margin: 5px;
+    }
+
+    .mail {
+      text-align: center;
+      color: gray;
+      margin: 12px;
+      font-style: italic;
+      font-size: 12px;
+      display: block;
+    }
+
+    .sosyal-medya {
+      max-width: 45px;
+      max-height: 45px;
+      border: 0;
+      align-items: center;
+      border-radius: 10px;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .logolar {
+      max-height: 100px;
+      max-width: 100px;
+      border: 0.5px solid #D8D8D8;
+      border-radius: 10px;
+      margin: 15px;
+    }
+
+    .yukarı-çık {
+      display: block;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: 'Bree Serif', serif;
+      margin-bottom: 5px;
+    }
+
+    .ok {
+      text-decoration: none;
+      font-weight: bolder;
+      color: goldenrod;
+      font-size: 20px;
+    }
+
+    .çubuk {
+      width: 6px;
+    }
+
+    .haber-gorseli-sabit {
+      object-fit: cover;
+      width: 90%;
+      height: 100px;
+      margin: 0px 5px 5px 5px;
+      border-radius: 10px;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+      /* BİLGİSAYAR GÖRÜNÜMÜ */
+      .resimli-haber {
+        display: flex;
+        width: 100%;
+      }
+
+      .haber-gorseli {
+        object-fit: cover;
+        width: 30%;
+        margin: 0px 20px 20px 20px;
+        border-radius: 10px;
+        margin-left: 5px;
+      }
+
+      .gif {
+        margin: 10px 10px 10px 10px;
+        /* margin top 40 olacak bir sonrkai bültene*/
+        margin-left: -10px;
+        width: 200px;
+        border-radius: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      /* MOBİL GÖRÜNÜM */
+      .resimli-haber {
+        width: 100%;
+      }
+
+      .haber-gorseli {
+        object-fit: cover;
+        width: 90%;
+        height: 100px;
+        margin: 5px;
+        margin-top: -10px;
+        border-radius: 10px;
+      }
+
+      .gif {
+        margin: -10px;
+        width: 200px;
+        border-radius: 10px;
+
+      }
+    }
+  </style>
+</head>
+
+<body style="text-align: inherit;text-align: left; word-spacing: 3px;">
+  <!--<body align="center" style="text-align:left; word-spacing: 3px;"> -->
+  <div style="max-width:600px;">
+    <div class="part">
+      <img id="yukarı-link" class="main-header"
+        src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/logolar/Genesis-Header.png" alt="Header">
+      <h2 class="sub-header"> HAFTALIK BLOCKCHAIN HABERLERİ <br> <em class="tarih">23.04.2020 #12</em> <br> <a
+          style="font-weight: bold; font-size: 12px; color: goldenrod;" target="_blank"
+          href="https://dar.vin/genesis-arsiv">BÜLTEN ARŞİVİMİZ</a> </h2>
+      <!--
+      <p class="text"> Haftalık blockchain haber bültenimiz
+        <b>"Genesis"</b>in on birinci sayısından herkese merhabalar! Bu hafta da ilgi çekici haberler ve faydalı
+        olduğunu düşündüğümüz iki online etkinlikle karşınızdayız. Sosyal izolasyon döneminde verimli zaman geçirmek
+        adına katılmanızı öneriyoruz.
+        <br>Bültenimizin yeni sayısı gelene kadar herkese blockchain dolu ve sağlıklı bir hafta diliyoruz. İyi okumalar!
+        <b style="color: goldenrod;">#EvdeKal</b>
+      </p>
+      -->
+      <div style="display: flex; margin-top: 10px;">
+      <img style=" margin-left:30px; max-width: 30px;" src="data:image/png;base64,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" alt="TR">
+      <p class="text"> Meclisimizin 100. yılını kutlar, herkese mutlu bayramlar dileriz! </p>
+    </div>
+      <p class="text genesis"><b style="color: goldenrod;">Genesis</b> Bloğu: Bir blockchain ağında kaydedilen ilk bloğa
+        verilen isimdir.
+        "Başlangıç bloğu" da denmektedir.</p>
+      <p class="text">Bu hafta <b>değindiğimiz konuları</b> aşağıda görelim.</p>
+
+
+      <table class="text" style="padding-left: 50px;">
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Teknoloji.png"
+              alt="teknoloji" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Teknoloji </a></p>
+          </th>
+          <!--<th><p> <a class="siyahyap" href="#başlık-bir"> Teknoloji </a></p></th>-->
+        </tr>
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Pop%C3%BCler.png"
+              alt="popüler" height="25" width="6"></th>
+          <!--<th><p> <a class="siyahyap" href="#başlık-iki"> Popüler </a></p></th>-->
+          <th>
+            <p> <a class="siyahyap"> Popüler </a></p>
+          </th>
+        </tr>
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Uygulama%20Alanlar%C4%B1.png"
+              alt="uygulama alanları" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Uygulama Alanları </a></p>
+          </th>
+          <!--<th><p> <a class="siyahyap" href="#başlık-üç"> Uygulama Alanları </a></p></th>-->
+        </tr>
+
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Reg%C3%BClasyon-Hukuk.png"
+              alt="regülatif & resmi" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Regülatif & Resmi </a></p>
+          </th>
+          <!--
+          <th>
+            <p> <a class="siyahyap" href="#başlık-dört"> Regülatif & Resmi </a></p>
+          </th>-->
+        </tr>
+
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Etkinlikler.png"
+              alt="etkinlik" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Etkinlik </a></p>
+          </th>
+        </tr>
+
+        <!--
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/E%C4%9Fitimler.png"
+              alt="eğitim" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Eğitim </a></p>
+          </th>
+        </tr>
+        -->
+        <!--
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Akademik%20Ara%C5%9Ft%C4%B1rma.png"
+              alt="akademik & araştırma" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Akademik & Araştırma </a></p>
+          </th>
+        </tr>
+      -->
+        <!--
+            <tr style="height: 25;">
+                <th><img class="çubuk" src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Anket.png" alt="anket" height="25" width="6"></th>
+                <th><p> <a class="siyahyap" href="#başlık-sekiz"> Anket </a></p></th>
+            </tr style="height: 25">
+          -->
+
+      </table>
+    </div>
+
+    <!--<div class="part">
+      <h4 class="tarz-bir">.</h4>
+      <h1 id="başlık-bir" class="part-header part-bir"> Teknoloji </h1>
+      <article>
+        <h2 class="news-header"></h2>
+        <p class="news">
+      </article>
+      <a class="yukarı-çık ok" href="#yukarı-link"> ^</a>
+    </div> -->
+
+    <div class="part">
+      <h4 class="tarz-bir">.</h4>
+      <h1 id="başlık-bir" class="part-header part-bir"> Teknoloji </h1>
+      <article>
+        <h2 class="news-header"> Yeni dApp Geliştirme Platformu DAML Yayınlandı </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Akıllı kontrat tabalı dağıtık uygulamalar geliştirmek için yaratılan açık kaynaklı blockchain
+            platformu <a class="haber-link part-bir" target="_blank" href="www.daml.com">DAML</a> yayınlandı. Şirket,
+            daha önce
+            hiç dağıtık uygulama geliştirmemiş olsanız bile bu uygulama
+            sayesinde harika uygulamalar geliştirebileceğinizi iddia ediyor. DAML platformu ile yaratıcı, yenilikçi ve
+            güvenli blockchain çözümleri üretilebilecek. Ayrıca DAML, çeşitli Amazon ve Hyperledger platformları
+            tarafından da destekleniyor.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://daml.com/static/images/illus.png" alt="Haber Görseli">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Ethereum’da Yasadışı Faaliyetler Takip Edilebilecek </h2><br>
+        <p class="news"> Ethereum blockchainindeki en popüler izleyicilerden biri olan <a class="haber-link"
+            target="_blank"
+            href="https://blockchaintd.com/posts/etherscan-added-illegal-activity-monitoring-in-ethereum">Etherescan</a>,
+          yasadışı etkinlik takibi özelliğini başlattı. İzleme özelliği sayesinde yasadışı faaliyetlerle bağlantılı
+          fonların bulunduğu adresler işaretlenerek diğer adresler için uyarı oluşturulması sağlanacak. Uyarıya tıklayan
+          Etherescan kullanıcıları; şüpheli işlemin adres, hash ve işaretlenmeden önce bulunduğu yerler gibi bilgilere
+          erişebilecek. Bu sayede kripto paralardaki kara para aklama durumunun çözülebileceği düşünülüyor.
+        </p>
+      </article>
+      <!--<a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-iki">.</h4>
+      <h1 id="başlık-iki" class="part-header part-iki"> Popüler </h1>
+      <article>
+        <h2 class="news-header"> Facebook, Küresel Para Birimi Oluşturma Planlarını Gözden Geçiriyor </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> <a class="haber-link part-iki target=" _blank"
+              href="https://dailyhodl.com/2020/04/16/facebook-revamps-crypto-plans-in-embattled-bid-to-launch-global-currency/">Facebook</a>,
+            Libra’yı tek bir küresel kripto para birimi olarak yayınlama planlarını; ilk ortaya
+            çıktıktan yaklaşık bir sene sonra gözden geçiriyor. Yeni planlara göre Libra’nın yerel para birimlerine
+            bağlı birden fazla stablecoin ile desteklenen yeni bir yapısı olacak ve Libra; sınır ötesi işlemleri
+            kolaylaştıran, programlanabilir, birlikte çalışabilir ve yükseltilebilir bir finansal sistem oluşturmayı
+            hedefleyecek. Libra’nın bu yeni sistem sayesinde yerel para birimlerine bağlı olan PayPal ve Venmo gibi
+            ödeme ağlarına karşı kaybettiği devrimci üstünlüğü yeniden kazanabileceği düşünülüyor.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://cdn.webrazzi.com/uploads/2018/12/facebook-blockchain_hd.jpg" alt="Haber Görseli">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Ant Financial, Konsorsiyum Blockchain Platformunu Başlattı </h2><br>
+        <p class="news"> Çinli teknoloji devi Alibaba’nın fintech kolu <a class="haber-link part-iki" target="_blank"
+            href=" https://www.theblockcrypto.com/post/62075/chinese-tech-giant-alibabas-subsidiary-launches-consortium-blockchain-platform">Ant</a>
+          Financial, “OpenChain” adlı konsorsiyum
+          blockchain platformunu faaliyete geçirdi. Konuyla ilgili yapılan açıklamada OpenChain’in küçük ve orta ölçekli
+          işletmelerin blockchain uygulamalarında yüksek verimi sağlayacağı, önümüzdeki 3 yıl içinde ise 1 milyon
+          KOBİ’ye
+          ulaşacağı belirtildi. Ayrıca OpenChain platformunun Ethereum’dan daha hızlı işlem yapabildiği ve işlem
+          maliyetinin Ethereum’un yüzde onu kadar olduğu açıklandı.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> WeBank, DAML Akıllı Sözleşme Dilini Blockchain Platformuna Entegre Edecek </h2><br>
+        <img class="haber-gorseli part-iki" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+          src="data:image/png;base64,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" alt="Haber Görseli">
+        <p class="news"> WeChat’in sahibi Tencent tarafından kurulan, Çin’in ilk ve tek dijital bankası <a
+            class="haber-link part-iki" target="_blank"
+            href="https://www.ledgerinsights.com/webank-blockchain-fisco-bcos-daml-smart-contract/ ">WeBank</a>; Digital
+          Asset adlı şirketin DAML akıllı sözleşme dilini FISCO BCOS blockchain platformuna entegre ettiğini açıkladı.
+          Yaklaşık bir sene önce açık kaynaklı olarak paylaşıldığından beri birçok kurumsal blockchain protokolüne
+          entegre
+          edilen DAML için WeBank CIO’su Henry Ma, Digital Asset ile yaptıkları ortaklığın bir çok sektörde yeni nesil
+          blockchain çözümleri sunmak açısından önemli bir kilometre taşı olduğunu belirtti.
+        </p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-üç">.</h4>
+      <h1 id="başlık-üç" class="part-header part-üç"> Uygulama Alanları </h1>
+      <article>
+        <h2 class="news-header"> Iot-Blockchain Platformu Nodle, COVID-19 Kişi Takip Uygulamasını Yayınladı </h2><br>
+        <img class="haber-gorseli-sabit" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+          src="https://cryptoworld.club/wp-content/uploads/2020/02/nodle-cryptoninjas.jpg" alt="Haber Görseli">
+        <p class="news"> Merkeziyetsiz nesnelerin interneti (IoT) girişimi <a class="haber-link part-üç" target="_blank"
+            href="https://www.ledgerinsights.com/covid-19-contact-tracing-iot-blockchain-nodle/">Nodle.io</a>,
+          COVID-19'un yaygınlığını içeren bir
+          temas takip uygulaması olan Coalition'ı yayınladı. Şirket, kullanıcı gizliliğini koruduğunu söylediği
+          uygulama Coalition’un yakındaki cihazlarla iletişim kurmak için Nodle’ın “bluetooth düşük enerji destekli
+          ağı”nı kullanacak. Kullanıcılar, uygulamayı indirip bluetoothu açtığında yakındaki diğer kullanıcılarla
+          yaptığı anonim karşılaşmalar uygulamaya kaydedilecek ve bu sayede virüslü biriyle karşılaşan kullanıcılar
+          bilgilendirilecek. Nodle, gerekli şartlar sağlanması halinde uygulamanın Apple ve Google uygulamaları ile
+          entegre edilebileceğini söyledi.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Blockchain Tabanlı "Bağışıklık Pasaportu” İşe Dönmenizi Sağlayabilir </h2><br>
+        <p class="news"> Oracle, çalışanların işe dönmesini sağlayabilecek bir dijital <a class="haber-link part-üç"
+            target="_blank"
+            href="https://cointelegraph.com/news/controversial-blockchain-immunity-passport-could-get-you-back-to-work">sağlık</a>
+          pasaportu geliştirmek için
+          blockchain verilerinin sertifikasyonu ve takibi üzerine çalışan “Vottun” şirketi ile ortaklık kurdu. Vottun,
+          daha öncesinde kişilerin bağışıklık sistemi hakkındaki bilgilerini blockchain üzerine kaydeden ve sonrasında
+          QR
+          kod aracılığıyla kolayca okunup doğrulanabilen “Bağışıklık Pasaportu” adlı bir proje geliştirmişti.
+          “Bağışıklık
+          Pasaportu” halihazırda İspanya tarafından da kullanılıyor.
+        </p>
+        <a class="haber-link" target="_blank"
+          href="https://cointelegraph.com/news/controversial-blockchain-immunity-passport-could-get-you-back-to-work"></a>
+      </article>
+      <article>
+        <h2 class="news-header"> Blockchain ile 12 Milyon Dolarlık Ticaret Anlaşması </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Singapur merkezli şirket “Dltledgers”, Kuzey Amerika’dan Endonezya’ya yapılan 12 milyon
+            dolarlık bir <a class="haber-link part-üç" target="_blank"
+              href="https://www.jumpstartmag.com/win-for-blockchain-industry-as-cargill-and-agrocorp-settle-us12m-commodity-trade-via-blockchain/">buğday
+              ticareti</a> işleminin blockchain platformları sayesinde kolayca gerçekleştirildiğini
+            duyurdu. Küresel tarım şirketi “Cargill” ile Singapur merkezli entegre tarım ve gıda çözümleri sağlayıcısı
+            “Agrocorp” arasında gerçekleşen bu kıtalar arası işlemde, anlaşmadaki taraflar blockchain çözümlerinin
+            ticari anlaşmalara büyük katkı sağladığını ve bu çözümlerin kullanımının her geçen gün arttığını da
+            belirtti.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://btcmanager.com/wp-content/uploads/2018/04/Out-of-all-the-industries-blockchain-could-disrupt-agriculture-may-not-be-the-first-on-everyone%E2%80%99s-radar-1120x668.jpg"
+            alt="Haber Görseli">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Ether ile Para Transferinin Yeni Yolu, MeTokens </h2><br>
+        <p class="news"> Özel bilgi ve becerilere sahip kişilerce verilecek, yeni bir değer belirleyicisi olması
+          planlanan
+          <a class="haber-link part-üç" target="_blank"
+            href="https://decrypt.co/25998/metokens-a-new-way-to-invest-in-people-and-get-paid-in-eth">MeTokens</a>;
+          parasal değeri önceden belirlenmiş bir eğri üzerinde artacak, kişiye göre değişken bir kripto değer
+          olacak. Örneğin, bir grafik tasarımcı daha yetenekli ve iyi bilinir hale geldikçe, ödeme olarak aldığı her
+          MeToken'dan daha çok yararlanabilecek. MeTokens özel beceriler sunan veya önemli bir takip sağlayan kişi ve
+          kuruluşlar için kazançlı olabilir. MeTokens kullanmak ise ona değer verildiğinin bir göstergesi olacak.
+        </p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-dört">.</h4>
+      <h1 id="bak-dört" class="part-header part-dört"> Regülatif & Resmi </h1>
+      <article>
+        <h2 class="news-header"> Polonyalı Bankalar, Blockchain Sayesinde Kağıt Kullanmayacak </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Polonya Kredi Ofisi (BIK), Billion Group ortaklığıyla gerçekleştirdiği blockchain
+            tabanlı <a class="haber-link part-dört" target="_blank"
+              href="https://billongroup.com/en/billons-distributed-ledger-technology-enables-polish-banks-to-go-paperless/">belge</a>
+            yönetim platformuna geçtiğini açıkladı. Bu proje sayesinde ülkedeki birçok banka, ücret
+            bildirimlerini blockchain teknolojisini kullanarak gönderebilecek ve tüm belgeler ilgili zincirde
+            saklanabilecek. Resmi kayıtların elektronik ortamda ve güvenli biçimde taşınmasını sağlayacak bu sistemin,
+            çeşitli güvenlik risklerini ortadan kaldırıp verimi artıracağı düşünülüyor.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://cryptotvplus.com/wp-content/uploads/2019/06/polish-bank-with-ethereum-blockchain.png"
+            alt="Haber Görseli">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Merkeziyetsiz Protokol, AB’nin Bağlantı İzleme Sitesinden Haber Verilmeksizin
+          Kaldırıldı
+        </h2><br>
+        <p class="news"> Ülkeler; cep telefonlarının konum takibi, yüz tanıma ve Bluetooth yakınlık takibi gibi
+          özelliklerini kullanarak dijital sistemler geliştirmeye çalışırken aksi bir durum da <a
+            class="haber-link part-dört" target="_blank"
+            href="https://www.coindesk.com/decentralized-protocol-removed-from-eu-contact-tracing-website-with-no-notice">Avrupa
+            Birliği</a>’nden geldi.
+          Bağlantı/temas takibi, sağlık yetkililerinin virüslerin yayılmasını takip ederek enfekte kişilerle kimlerin
+          temasta olduğunu belirleyip karantinaya alınacak kişileri ortaya çıkaran Avrupa Gizlilik Koruma (PEPP-PT)
+          konsorsiyumu, merkeziyetsiz gizlilik koruması hakkında herhangi bir açıklama yapmadan web sitesinden
+          kaldırıldı.
+          Bu durumun nedeni ise hala bilinmiyor.
+        </p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+
+    <div class="part">
+      <h4 class="tarz-beş">.</h4>
+      <h1 id="başlık-beş" class="part-header part-beş"> Etkinlik </h1>
+      <article>
+        <h2 class="news-header"> Substrate Developer Community Conference </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Parity Technologies isimli teknoloji şirketi, blockchain geliştiricileri ve ilgi duyan
+            insanların bir araya gelmesini hedefleyen; blockchain geliştirme plattformu Substrate hakkında da
+            konuşulacak <a class="haber-link part-beş" target="_blank"
+              href="https://sub0.parity.io/?utm_source=twitter&utm_medium=paid#program">online</a> bir konferans
+            düzenliyor. 28 Nisan’da düzenlenecek bu etkinliğe, ücretsiz bir şekilde
+            kaydolabilirsiniz.
+          </p>
+          <img class="gif" style="max-height: 150px;max-height: 150px;"
+            src="https://sub0.parity.io/assets/img/sub0-gif-no-text_reSIZE_v111111.gif" alt="Haber Gifi">
+        </div>
+      </article>
+
+    </div>
+
+
+    <!--
+    <div class="part">
+      <h4 class="tarz-altı">.</h4>
+      <h1 id="başlık-altı" class="part-header part-altı"> Eğitim </h1>
+
+    </div>
+  -->
+    <!--
+    <div class="part">
+      <h4 class="tarz-yedi">.</h4>
+      <h1 id="başlık-yedi" class="part-header part-yedi"> Akademik & Araştırma </h1>
+    </div>
+  -->
+
+
+    <!-- BURADAKİ OK KALKACAK
+    <div class="part">
+        <h4 class="tarz-sekiz">.</h4>
+        <h1 id="başlık-sekiz" class="part-header part-sekiz"> Anket </h1>
+        <a class="yukarı-çık ok" href="#yukarı-link"> ^</a>
+    </div>
+  -->
+
+    <div class="part">
+      <h1 class="bize-ulaşın"> Bize Ulaşın </h1>
+      <div>
+        <a href="https://dar.vin/genesis-twitter" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Twitter'da Biz" alt="Twitter'da Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-twitter.png">
+        </a>
+        <a href="https://dar.vin/genesis-instagram" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Instagram" alt="Instagram'da Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-instagram.png">
+        </a>
+        <a href="https://dar.vin/genesis-linkedin" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Linkedin" alt="LinkedIn'de Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-linkedin.png">
+        </a>
+
+      </div>
+      <p class="tercihleriniz"><a class="tercihleriniz"
+          href="mailto:?subject=Genesis&nbspBlockchain&nbspHaber&nbspBülteni&body=Merhabalar.&nbspGenesis,&nbspblockchain&nbsphakkında&nbspdünyada&nbspve&nbspTürkiye'deki&amp;nbspönemli&nbsphaberlerin&nbsptoplandığı&nbsphaftalık&nbspbir&nbsphaber&nbspbültenidir.&nbspKaydolmak&nbspiçin&nbsplinke&nbsptıklayabilirsiniz.&nbspKayıt&nbspLinki:&nbspgenesisnews.co">
+          Bülteni Mail
+          ile Paylaşın</a></p>
+      <p class="tercihleriniz"><a class="tercihleriniz"
+          href="https://wa.me/?text=Haftalık%20blockchain%20haber%20bülteni%20www.genesisnews.co"> Bülteni Whatsapp ile
+          Paylaşın
+        </a></p><a class="tercihleriniz" target="_blank" href="mailto:info@genesisnews.co?subject=Geri&nbspBildirim">
+        Görüşlerinizi Bizle Paylaşın</a>
+
+      <div>
+        <a href="http://www.instagram.com/inkube/" style="text-decoration:none;" target="_blank">
+          <img class="inkube logolar" style="max-width:150px;" title="Inkube-Instagram" alt="Inkube Logo"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-inkube.png">
+        </a>
+        <a href="http://www.instagram.com/deconsensus/" style="text-decoration:none;" target="_blank">
+          <img class="decons logolar" style="max-width:150px;" title="Decons-Instagram" alt="Decons Logo"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-decons.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--
+  
+RESİMSİZ HABER TEMPLATE
+<article>
+    <h2 class="news-header">  </h2><br>
+    <p class="news">
+    </p>
+    <a class="haber-link" target="_blank" href=""></a>
+</article>
+
+RESİMLİ  HABER TEMPLATE
+<article>
+        <h2 class="news-header">  </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> 
+          </p>
+          <a class="haber-link" target="_blank" href=""></a>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="" alt="Haber Görseli">
+        </div>
+</article>
+
+GİF TEMPLATE
+<article>
+        <h2 class="news-header">  </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> 
+          </p>
+          <a class="haber-link" target="_blank" href=""></a> 
+          <img class="gif" style="max-height: 200px;max-height: 200px;" src="" alt="Haber Gifi">
+        </div>
+</article>
+
+-->
+</body>
+
+</html>
