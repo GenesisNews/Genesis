@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Genesis</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+  <style media="screen">
+    .part {
+      border: 1px solid #D8D8D8;
+      border-radius: 25px;
+      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+      margin: 9px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+
+    .main-header {
+      width: inherit;
+      height: inherit;
+      margin: 0px;
+      padding: 0px;
+      border-radius: 22px 22px 0px 0px;
+
+    }
+
+    .sub-header {
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #F4F4F3;
+      text-align: center;
+      margin-top: -5px;
+      margin-bottom: -5px;
+      margin-left: 0.5px;
+      margin-right: 0.5px;
+      padding: 8px;
+      border-radius: 0 0 4px 4px;
+      color: black;
+    }
+
+
+    .tarih {
+      font-size: 12px;
+    }
+
+    .text {
+      margin: 10px 20px 10px 20px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: inherit;
+      text-align: left;
+    }
+
+    .genesis {
+      margin-top: 15px;
+      font-size: 12px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: '▮';
+      font-weight: bolder;
+      display: inline-block;
+      width: 0.8em;
+      margin-left: -1em;
+    }
+
+    .tarz-bir {
+      background-color: #8241A0;
+      color: #8241A0;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-iki {
+      background-color: #0f4d92;
+      color: #0f4d92;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-üç {
+      background-color: #216331;
+      color: #216331;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-dört {
+      background-color: #A40000;
+      color: #A40000;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-beş {
+      background-color: #D95D39;
+      color: #D95D39;
+      margin: 0;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-altı {
+      background-color: #EF545F;
+      color: #EF545F;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-yedi {
+      background-color: #1DA1F2;
+      color: #1DA1F2;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .tarz-sekiz {
+      background-color: #FFAA00;
+      color: #FFAA00;
+      margin: 0 0.5px 0 0.5px;
+      padding: 0;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .part-bir {
+      color: #8241A0;
+    }
+
+    .part-iki {
+      color: #0f4d92;
+    }
+
+    .part-üç {
+      color: #216331;
+    }
+
+    .part-dört {
+      color: #A40000;
+    }
+
+    .part-beş {
+      color: #D95D39;
+    }
+
+    .part-altı {
+      color: #EF545F;
+    }
+
+    .part-yedi {
+      color: #1DA1F2;
+    }
+
+    .part-sekiz {
+      color: #FFAA00;
+    }
+
+    .siyahyap {
+      color: black;
+      text-decoration: none;
+      font-size: 16px;
+      word-spacing: 3px;
+      text-align: left;
+    }
+
+    .part-header {
+      font-size: 20px;
+      margin: 20px 20px 20px 20px;
+      font-weight: bolder;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      /* text-align: left; */
+
+    }
+
+    .news-header {
+      font-size: 16px;
+      margin: 20px 20px 0px 20px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: justify;
+      /* text-align: left; */
+
+
+    }
+
+    .news {
+      margin: 0px 20px 20px 20px;
+      line-height: 1.5;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: inherit;
+      text-align: left;
+    }
+
+    .haber-link {
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .news::before {
+      content: "\2022";
+      font-weight: bolder;
+      display: inline-block;
+    }
+
+    .bize-ulaşın {
+      text-align: center;
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      margin: 20px;
+
+    }
+
+    .tercihleriniz {
+      font-size: 14px;
+      text-align: center;
+      color: gray;
+      margin-bottom: 5px;
+      font-family: 'Montserrat', sans-serif;
+      margin: 5px;
+    }
+
+    .mail {
+      text-align: center;
+      color: gray;
+      margin: 12px;
+      font-style: italic;
+      font-size: 12px;
+      display: block;
+    }
+
+    .sosyal-medya {
+      max-width: 45px;
+      max-height: 45px;
+      border: 0;
+      align-items: center;
+      border-radius: 10px;
+      margin: 5px;
+      margin-bottom: 10px;
+    }
+
+    .logolar {
+      max-height: 100px;
+      max-width: 100px;
+      border: 0.5px solid #D8D8D8;
+      border-radius: 10px;
+      margin: 15px;
+    }
+
+    .yukarı-çık {
+      display: block;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: 'Bree Serif', serif;
+      margin-bottom: 5px;
+    }
+
+    .ok {
+      text-decoration: none;
+      font-weight: bolder;
+      color: goldenrod;
+      font-size: 20px;
+    }
+
+    .çubuk {
+      width: 6px;
+    }
+
+    .haber-gorseli-sabit {
+      object-fit: cover;
+      width: 90%;
+      height: 100px;
+      margin: 0px 5px 5px 5px;
+      border-radius: 10px;
+    }
+
+    @media only screen and (min-width: 768px) {
+
+      /* BİLGİSAYAR GÖRÜNÜMÜ */
+      .resimli-haber {
+        display: flex;
+        width: 100%;
+        /*align-items: center;*/
+      }
+
+      .haber-gorseli {
+        object-fit: cover;
+        width: 30%;
+        margin: 0px 20px 20px 20px;
+        border-radius: 10px;
+        margin-left: 5px;
+      }
+
+      .gif {
+        margin: 40px 10px 10px 10px;
+        margin-left: -10px;
+        width: 200px;
+        border-radius: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      /* MOBİL GÖRÜNÜM */
+      .resimli-haber {
+        width: 100%;
+      }
+
+      .haber-gorseli {
+        object-fit: cover;
+        width: 90%;
+        height: 100px;
+        margin: 5px;
+        margin-top: -10px;
+        border-radius: 10px;
+      }
+
+      .gif {
+        margin: -10px;
+        margin-bottom: 5px;
+        width: 200px;
+        border-radius: 10px;
+
+      }
+    }
+  </style>
+</head>
+
+<body style="text-align: inherit;text-align: left; word-spacing: 3px;">
+  <!--<body align="center" style="text-align:left; word-spacing: 3px;"> -->
+  <div style="max-width:600px;">
+    <div class="part">
+      <img id="yukarı-link" class="main-header"
+        src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/logolar/Genesis-Header.png" alt="Header">
+      <h2 class="sub-header"> HAFTALIK BLOCKCHAIN HABERLERİ <br> <em class="tarih">09.07.2020 #23</em> <br> <a
+          style="font-weight: bold; font-size: 12px; color: goldenrod;" target="_blank"
+          href="https://dar.vin/genesis-arsiv">BÜLTEN ARŞİVİMİZ</a> </h2>
+      <!--
+      <p class="text"> Haftalık blockchain haber bültenimiz
+        <b>"Genesis"</b>in on birinci sayısından herkese merhabalar! Bu hafta da ilgi çekici haberler ve faydalı
+        olduğunu düşündüğümüz iki online etkinlikle karşınızdayız. Sosyal izolasyon döneminde verimli zaman geçirmek
+        adına katılmanızı öneriyoruz.
+        <br>Bültenimizin yeni sayısı gelene kadar herkese blockchain dolu ve sağlıklı bir hafta diliyoruz. İyi okumalar!
+        <b style="color: goldenrod;">#EvdeKal</b>
+      </p>
+      -->
+      <p class="text genesis"><b style="color: goldenrod;">Genesis</b> Bloğu: Bir blockchain ağında kaydedilen ilk bloğa
+        verilen isimdir. "Başlangıç bloğu" da denmektedir.</p>
+      <p class="text">Bu hafta <b>değindiğimiz konuları</b> aşağıda görelim.</p>
+
+
+      <table class="text" style="padding-left: 50px;">
+
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Teknoloji.png"
+              alt="teknoloji" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Teknoloji </a></p>
+          </th>
+          <!--<th><p> <a class="siyahyap" href="#başlık-bir"> Teknoloji </a></p></th>-->
+        </tr>
+
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Pop%C3%BCler.png"
+              alt="popüler" height="25" width="6"></th>
+          <!--<th><p> <a class="siyahyap" href="#başlık-iki"> Popüler </a></p></th>-->
+          <th>
+            <p> <a class="siyahyap"> Popüler </a></p>
+          </th>
+        </tr>
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Uygulama%20Alanlar%C4%B1.png"
+              alt="uygulama alanları" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Uygulama Alanları </a></p>
+          </th>
+          <!--<th><p> <a class="siyahyap" href="#başlık-üç"> Uygulama Alanları </a></p></th>-->
+        </tr>
+
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Reg%C3%BClasyon-Hukuk.png"
+              alt="regülatif & resmi" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Regülatif & Resmi </a></p>
+          </th>
+          <!--
+          <th>
+            <p> <a class="siyahyap" href="#başlık-dört"> Regülatif & Resmi </a></p>
+          </th>-->
+        </tr>
+        <!--
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Etkinlikler.png"
+              alt="etkinlik" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Etkinlik </a></p>
+          </th>
+        </tr>
+      -->
+        <!--
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/E%C4%9Fitimler.png"
+              alt="eğitim" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Eğitim </a></p>
+          </th>
+        </tr>
+        -->
+        <!--
+        <tr>
+          <th><img class="çubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Akademik%20Ara%C5%9Ft%C4%B1rma.png"
+              alt="akademik & araştırma" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Akademik & Araştırma </a></p>
+          </th>
+        </tr>
+        -->
+        <!--
+            <tr style="height: 25;">
+                <th><img class="çubuk" src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Anket.png" alt="anket" height="25" width="6"></th>
+                <th><p> <a class="siyahyap" href="#başlık-sekiz"> Anket </a></p></th>
+            </tr style="height: 25">
+          -->
+
+      </table>
+    </div>
+
+    <!--<div class="part">
+      <h4 class="tarz-bir">.</h4>
+      <h1 id="başlık-bir" class="part-header part-bir"> Teknoloji </h1>
+      <article>
+        <h2 class="news-header"></h2>
+        <p class="news">
+      </article>
+      <a class="yukarı-çık ok" href="#yukarı-link"> ^</a>
+    </div> -->
+
+
+    <div class="part">
+      <h4 class="tarz-bir">.</h4>
+      <h1 id="başlık-bir" class="part-header part-bir"> Teknoloji </h1>
+      <article>
+        <h2 class="news-header"> Metamask'in Yeni Güncellemesi Yayınlandı </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Sanal Ethereum cüzdanı <a class="haber-link part-bir" target="_blank"
+              href="https://medium.com/metamask/announcing-metamask-version-8-9126dc2df98">MetaMask</a>, yeni
+            güncellemesi ile gizliliği ön plana çıkaran birçok yeni
+            özelliğe kavuştu. İnternet tarayıcısı uzantısı olarak çalışıp kullanıcılara ERC-20 tokenlerini saklama
+            imkanı sağlayan cüzdanda ayrıca arayüz değişiklikleri de olacak. Metamask geliştiricisi Dan Finlay, konuyla
+            ilgili olarak; yeni özelliğin hesaplar arasında kolayca geçiş yapılmasına olanak sağlayacağı ve eklentinin
+            merkeziyetsiz ağ üzerindeki farklı sitelerle etkileşiminin kontrol altında tutulabileceğini belirtti.
+            JavaScript yazılım dili üzerine kurulu eklenti, siber saldırıları önlemeye yönelik bir araç olan LavaMoat'a
+            sahip olsa da yeni özellikleriyle risklere açık olduğu da belirtiliyor.
+          </p>
+          <img class="gif" style="max-height: 200px;max-width: 200px;"
+            src="https://cdn.dribbble.com/users/2574702/screenshots/6702374/metamask.gif" alt="Haber Gifi">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Kirobo, Kripto Alanında Geri Dönüşsüzlük Sorununu Çözdü </h2><br>
+        <p class="news"> İsrail merkezli girişim <a class="haber-link part-bir" target="_blank"
+            href="https://www.accesswire.com/595773/Blockchain-Startup-Kirobo-Solves-Cryptos-Irreversible-Transaction-Problem">Kirobo</a>,
+          dijital varlık transferlerinde insan hatasından kaynaklanan fon
+          kayıplarını önleyecek bir yol keşfetti. Kullanıcılar ve kripto servis sağlayıcısı arasında ek bir katman
+          oluşturarak yanlış adrese gönderilen bir işlemi iptal etme olanağı sunan bu çözüm, Bitcoin işlemleri için
+          Ledger’a entegre edilmiş durumda. Kripto işlemleri gerçekleştiren kitlenin %18’inin çeşitli hatalardan dolayı
+          fon kayıpları yaşaması, Kirobo’nun sunduğu bu çözümün geleneksel bankacılıkta var olan geri alma özelliğinin
+          fazlasıyla benimsenmesini sağlayabilir.
+        </p>
+      </article>
+      <!--<a class="yukarı-çık ok" href="#yukarı-link"> ^</a>-->
+    </div>
+
+
+    <div class="part">
+      <h4 class="tarz-iki">.</h4>
+      <h1 id="başlık-iki" class="part-header part-iki"> Popüler </h1>
+      <article>
+        <h2 class="news-header"> Merkeziyetsiz Mesajlaşma Uygulaması Protokolü Yayınlandı </h2><br>
+        <img src="https://miro.medium.com/max/4912/1*diebIwN169mTR0eTQqmcrw.jpeg" class="haber-gorseli-sabit"
+          alt="Haber Görseli">
+        <p class="news"> Unstoppable Domains tarafından yayınlanan, kullanıcıların kendi sunucularında veri depolamasına
+          olanak sağlayacak merkeziyetsiz <a class="haber-link part-iki" target="_blank"
+            href="https://unstoppabledomains.com/chat">mesajlaşma</a> uygulaması protokolü; eşler arası ağ ve uçtan uca
+          şifreleme
+          kullanarak bazı sosyal medya platformlarının aksine kullanıcıların kendi mesajlarını depolamasına ve
+          şifrelemesine imkân tanıyarak gizliliği sağlamayı hedefliyor. Bunun yanında Ethereum "private key"i
+          kullanımının
+          zorunlu olması sebebiyle sohbete kimsenin erişememesini sağlaması açısından uygulama maksimum güvenliği
+          garanti
+          etse de “dChat” adlı uygulama yasadışı olayların takibi açısından risk oluşturuyor.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Dfinity, TikTok'a Rakip Uygulamasının Geliştirilme Aşamasından Bahsetti </h2><br>
+        <p class="news"> Dfinity, dünyaca ünlü <a class="haber-link part-iki" target="_blank"
+            href="https://dfinity.org/">video</a> paylaşım uygulaması TikTok’a rakip olarak ürettiği CanCan isimli
+          uygulamasının geliştirilmesini sağlayan, güvenli, ekonomik ve merkeziyetsiz bulut bilgisayar çözümü “The
+          Internet Computer” hakkındaki gelişmeleri paylaştı. Şirkete göre The Internet Computer ile teknoloji
+          devlerinin
+          tekeline karşı mücadele edilebilecek. Çalışmalar platformun geliştiricilere ve işletmelere kendi
+          uygulamalarını
+          yaratıp işleme geçirme şansı verdiklerinden bahsedildi. Platformun ilk ürünü olan CanCan ise belirtilene göre
+          bin satırdan daha az kod yazılarak oluşturuldu. CanCan, bu kolay kullanımını ise platformun yazılım dili
+          Motoko’ya borçlu.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Ethereum Kurucusu, ETH 2.0 Güncellemesi Hakkında Konuştu </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Ethereum kurucusu Vitalik Buterin, uzun zamandır beklenen <a class="haber-link part-iki"
+              target="_blank"
+              href="https://twitter.com/VitalikButerin/status/1277961594958471168https://twitter.com/VitalikButerin/status/1277961594958471168">ETH
+              2.0</a> güncellemesi üzerinde
+            yaptıkları çalışmaların; gittikçe iş hacminini güçlendireceğini belirtti. Buterin'in iddiasına göre yeni
+            güncelleme ile Ethereum saniyede 100.000 işlemi ölçeklendirecek kapasiteye ulaşacak. Lansmanının geçtiğimiz
+            Ocak ayında yapılması beklenen ETH 2.0'ın çıkış tarihi çeşitli gecikmeler nedeniyle belirsizliğini koruyor.
+            Ancak testnet koordinatörü Afri Schoedon'a göre geliştirme yıl sonunda veya yeni yılın başlarında sunulacak.
+            Ethereum 2.0 geliştirmesi ile "proof of work"ten (PoW) "proof of stake" (PoS) konsensüs mekanizmasına
+            geçecek platformun ölçeklenebilirlik ve performansında büyük artış gözlenecek.
+          </p>
+          <img class="haber-gorseli part-iki" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://blog.ethereum.org/img/2019/11/00-Merkle-4K.png" alt="Haber Görseli">
+        </div>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-üç">.</h4>
+      <h1 id="başlık-üç" class="part-header part-üç"> Uygulama Alanları </h1>
+      <article>
+        <h2 class="news-header"> Emaar, Gayrimenkulleri Tokenize Etmeye Yarayacak Bir Platform Kuruyor </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Dünyanın en yüksek binası Burj Khalifa, Dubai Creek Tower, Marina Towers gibi çeşitli popüler
+            binaların sahibi <a class="haber-link part-üç" target="_blank"
+              href="https://www.ledgerinsights.com/emaar-worlds-tallest-building-tokenize-assets-using-dlt/">Emaar</a>;
+            dağıtık defterler kullanarak gayrimenkulleri tokenize etmeyi hedefleyen çalışmalara
+            başladığını duyurdu. İsviçre ve komşu bölgelerdeki blockchain ve dağıtık defter teknolojisi (DLT) projeleri
+            üzerinde çalışan; aynı zamanda varlık tokenizasyonu, saklama hizmeti ve bankacılık altyapısına uzanan
+            hizmetler de sunan Swisscom Blockchain; bu projede Emaar'la birlikte yer alacak. Ayrca bu proje, Emaar’ın
+            blockchain endüstrisine ilk girişi değil. Geçen yıl firma EMR Platformu adı verilen bir kripto ve blockchain
+            ödül uygulaması başlatmıştı. Bu platformda; mülklerinde, otellerinde, e-ticaret işlemlerinde ve alışveriş
+            merkezlerinde kullanılabilecek tokenlar sunulmuştu. Emaar, tokenlarının takas edilebilir olduğunu iddia etse
+            de tokenlar şu anda herhangi bir kripto borsasında yer almıyor.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://amp.thenational.ae/image/policy:1.964771:1579093512/na16-anjum.jpg?f=default&q=1.0&w=1024&$p$f$q$w=7a409e1"
+            alt="Haber Görseli">
+        </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Çin Mahkemeleri, Blockchain Destekli Elektronik Kilitler Kullanıyor </h2><br>
+        <p class="news"> Global Times raporu; Çin'deki mahkemelerin, ülkedeki yasal inceleme altındaki <a
+            class="haber-link part-üç" target="_blank"
+            href="https://www.globaltimes.cn/content/1193524.shtml">mülkleri</a> güvence
+          altına almak için blockchain destekli elektronik kapı kilitleri kullandığını gösteriyor. Bu kilitler sayesinde
+          mahkeme kararını ihlal eden izinsiz girişlerin önlenmesi adına, gerçek zamanlı video gözetimi sağlanırken
+          tehlike arz eden bir durumda yetkililerin haberdar olması da sağlanmış olacak. Geleneksel düzende mühürleme
+          işlemlerinin fiziksel belgelerle yapılmasındaki güvensizlik sebebiyle, blockchain teknolojisi güvenlik
+          güçlerinin en büyük yardımcısı olma potansiyeli taşıyor.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Alman Otomotiv Devi Daimler, Blockchain ile Veri Alışverişini Deniyor </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> Blockchain tabanlı veri paylaşım platformu Ocean Protocol, <a class="haber-link part-üç"
+              target="_blank"
+              href="https://blog.oceanprotocol.com/ocean-protocol-delivers-proof-of-concept-for-daimler-ag-in-collaboration-with-daimler-south-east-564aa7d959ca">Mercedes-Benz</a>
+            üst kuruluşu “Daimler
+            AG” ile merkeziyetsiz veri paylaşımı testi için gerçekleştirdikleri pilot projenin tamamlandığını açıkladı.
+            Şirketlerin kazanç elde etmek amacıyla açık hale getirdiği verilerin, diğer şirketler tarafından ücret
+            karşılığında yalnızca hesaplama için kullanmasına izin veren Ocean Protocol; geliştirdikleri PoC
+            (Proof-of-Concept) projesi sayesinde şirketin kendi içindeki birçok yerinde de veri paylaşımını verimli
+            kılacak. Proje sonucunda, Daimler AG’nin 300 milyon dolarlık harcamadan tasarruf edebileceği açıklandı.
+          </p>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="https://www.mercedes-benz.com/en/_jcr_content/root/slider_copy_copy/sliderchilditems/slideritem_copy_621776732/image/MQ7-0-image-20200527001826/01-mercedes-benz-2020-e-class-coupe-cabriolet-3400x1440.jpeg"
+            alt="Haber Görseli">
+        </div>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <div class="part">
+      <h4 class="tarz-dört">.</h4>
+      <h1 id="başlık-dört" class="part-header part-dört"> Regülatif & Resmi </h1>
+      <article>
+        <h2 class="news-header"> Japon Merkez Bankası, Çevrimdışı Dijital Ödemelerin Geliştirilmesini Hedefliyor </h2>
+        <br>
+        <p class="news"> Japonya Merkez Bankası, geçtiğimiz günlerde yayınladığı araştırma makalesinde; Japon para
+          birimi
+          Yen’in çevrimdışı kullanım potansiyelini araştırdı. Banka, <a class="haber-link part-dört" target="_blank"
+            href="https://www.boj.or.jp/research/brp/psr/data/psrb200702.pdf">nakit</a> kullanımındaki istikrarlı
+          düşüşle birlikte; dijital paralara olan ihtiyacın arttığını kabullense de Japonya’daki her beş işlemden dördü
+          hâlâ nakit sistemiyle gerçekleştiriliyor. Bundan dolayı dijital para sisteminde erişimi ve kullanım
+          kolaylığını
+          optimum düzeye çıkarabilmek için atılabilecek adımların değerlendirdiği bu raporda, ek olarak özel-dijital
+          anahtara sahip banka kartlarından mobil ekosisteme kadar birçok duruma ait değerlendirmeler yer alıyor. Rapor
+          geleceğin bir olgusu sıfatıyla dijital para döneminin altını çiziyor.
+        </p>
+      </article>
+      <article>
+        <h2 class="news-header"> Çin, Reçeteler ve Tıbbi Faturalandırmalarında Blockchain Kullanmaya Başladı </h2><br>
+        <img src="https://image.binance.vision/uploads/HOHNzWUtiM7Ye5zAoGR9.png" class="haber-gorseli-sabit"
+          alt="Haber Görseli">
+        <p class="news"> Çin’in iki kentinde, reçeteler ve <a class="haber-link part-dört" target="_blank"
+            href="https://zhuanlan.zhihu.com/p/150312043">tıbbi</a> faturalandırmaya odaklanan dağıtık defter özellikli
+          platformların lansmanı geçtiğimiz haftalarda yapıldı. Reçetelendirme sisteminin kâğıt belgelere dayalı
+          yapılması
+          ve bunun takibinin zor olmasından dolayı blockchaini benimseyen kentler, bu sayede ilacı yazan doktordan
+          ilacın
+          dağıtımına kadar tüm süreci takip edebilecek. Bunun yanında hastalarının tıbbi kayıtlarını da aynı zincirde
+          depolayabilecek. Tıbbi faturalar konusunda bulunan farklı bir çözümle de sahte faturaları tespit etmek, fatura
+          sürecini kolaylaştırmak ve kâğıt kullanımını azaltmak amaçlanıyor.
+        </p>
+      </article>
+      <!-- <a class="yukarı-çık ok" href="#yukarı-link"> ^</a> -->
+    </div>
+
+    <!--
+    <div class="part">
+      <h4 class="tarz-beş">.</h4>
+      <h1 id="başlık-beş" class="part-header part-beş"> Etkinlik </h1>
+
+    </div>
+  -->
+
+    <!--
+    <div class="part">
+      <h4 class="tarz-altı">.</h4>
+      <h1 id="başlık-altı" class="part-header part-altı"> Eğitim </h1>
+
+    </div>
+    -->
+
+    <!--
+    <div class="part">
+      <h4 class="tarz-yedi">.</h4>
+      <h1 id="başlık-yedi" class="part-header part-yedi"> Akademik & Araştırma </h1>
+
+    </div>
+
+  -->
+
+    <!-- BURADAKİ OK KALKACAK
+    <div class="part">
+        <h4 class="tarz-sekiz">.</h4>
+        <h1 id="başlık-sekiz" class="part-header part-sekiz"> Anket </h1>
+        <a class="yukarı-çık ok" href="#yukarı-link"> ^</a>
+    </div>
+    -->
+
+    <div class="part">
+      <h1 class="bize-ulaşın"> Bize Ulaşın </h1>
+      <div>
+        <a href="https://dar.vin/genesis-twitter" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Twitter'da Biz" alt="Twitter'da Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-twitter.png">
+        </a>
+        <a href="https://dar.vin/genesis-instagram" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Instagram" alt="Instagram'da Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-instagram.png">
+        </a>
+        <a href="https://dar.vin/genesis-linkedin" style="text-decoration:none;" target="_blank">
+          <img class="sosyal-medya" style="max-width:60px;" title="Linkedin" alt="LinkedIn'de Biz"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-linkedin.png">
+        </a>
+
+      </div>
+      <p class="tercihleriniz"><a class="tercihleriniz"
+          href="mailto:?subject=Genesis&nbspBlockchain&nbspHaber&nbspBülteni&body=Merhabalar.&nbspGenesis,&nbspblockchain&nbsphakkında&nbspdünyada&nbspve&nbspTürkiye'deki&amp;nbspönemli&nbsphaberlerin&nbsptoplandığı&nbsphaftalık&nbspbir&nbsphaber&nbspbültenidir.&nbspKaydolmak&nbspiçin&nbsplinke&nbsptıklayabilirsiniz.&nbspKayıt&nbspLinki:&nbspgenesisnews.co">
+          Bülteni Mail
+          ile Paylaşın</a></p>
+      <p class="tercihleriniz"><a class="tercihleriniz"
+          href="https://wa.me/?text=Haftalık%20blockchain%20haber%20bülteni%20www.genesisnews.co"> Bülteni Whatsapp ile
+          Paylaşın
+        </a></p><a class="tercihleriniz" target="_blank" href="mailto:info@genesisnews.co?subject=Geri&nbspBildirim">
+        Görüşlerinizi Bizle Paylaşın</a>
+
+      <div>
+        <a href="http://www.instagram.com/inkube/" style="text-decoration:none;" target="_blank">
+          <img class="inkube logolar" style="max-width:150px;" title="Inkube-Instagram" alt="Inkube Logo"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-inkube.png">
+        </a>
+        <a href="http://www.instagram.com/deconsensus/" style="text-decoration:none;" target="_blank">
+          <img class="decons logolar" style="max-width:150px;" title="Decons-Instagram" alt="Decons Logo"
+            src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-decons.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--
+  
+RESİMSİZ HABER TEMPLATE
+<article>
+    <h2 class="news-header">  </h2><br>
+    <p class="news">
+    </p>
+    <a class="haber-link" target="_blank" href=""></a>
+</article>
+
+<article>
+    <h2 class="news-header">  </h2><br>
+    <img src="" class="haber-gorseli-sabit" alt="Haber Görseli">
+    <p class="news">
+    </p>
+    <a class="haber-link" target="_blank" href=""></a>
+</article>
+
+RESİMLİ  HABER TEMPLATE
+<article>
+        <h2 class="news-header">  </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> 
+          </p>
+          <a class="haber-link" target="_blank" href=""></a>
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+            src="" alt="Haber Görseli">
+        </div>
+</article>
+
+GİF TEMPLATE
+<article>
+        <h2 class="news-header">  </h2><br>
+        <div class="resimli-haber">
+          <p class="news"> 
+          </p>
+          <a class="haber-link" target="_blank" href=""></a> 
+          <img class="gif" style="max-height: 200px; max-width: 200px;" src="" alt="Haber Gifi">
+        </div>
+</article>
+
+-->
+</body>
+
+</html>
