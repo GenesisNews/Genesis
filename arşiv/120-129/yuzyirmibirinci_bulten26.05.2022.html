@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Genesis</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <style media="screen">
+      * {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .part {
+        border: 1px solid #d8d8d8;
+        border-radius: 25px;
+        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.16);
+        margin: 9px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      .main-header {
+        width: inherit;
+        height: inherit;
+        margin: 0px;
+        padding: 0px;
+        border-radius: 22px 22px 0px 0px;
+      }
+
+      .sub-header {
+        font-size: 18px;
+        font-weight: normal;
+        font-family: "Montserrat", sans-serif;
+        background-color: #f4f4f3;
+        text-align: center;
+        margin-top: -5px;
+        margin-bottom: -5px;
+        margin-left: 0.5px;
+        margin-right: 0.5px;
+        padding: 8px;
+        border-radius: 0 0 4px 4px;
+        color: black;
+      }
+
+      .tarih {
+        font-size: 12px;
+      }
+
+      .text {
+        margin: 10px 20px 10px 20px;
+        line-height: 1.5;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        text-align: inherit;
+        text-align: left;
+      }
+
+      .genesis {
+        margin-top: 15px;
+        font-size: 12px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li::before {
+        content: "▮";
+        font-weight: bolder;
+        display: inline-block;
+        width: 0.8em;
+        margin-left: -1em;
+      }
+
+      .tarz-bir {
+        background-color: #8241a0;
+        color: #8241a0;
+        margin: 0;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-iki {
+        background-color: #0f4d92;
+        color: #0f4d92;
+        margin: 0 0.5px 0 0.5px;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-uc {
+        background-color: #216331;
+        color: #216331;
+        margin: 0 0.5px 0 0.5px;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-dort {
+        background-color: #a40000;
+        color: #a40000;
+        margin: 0 0.5px 0 0.5px;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-bes {
+        background-color: #d95d39;
+        color: #d95d39;
+        margin: 0;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-alti {
+        background-color: #ef545f;
+        color: #ef545f;
+        margin: 0 0.5px 0 0.5px;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-yedi {
+        background-color: #1da1f2;
+        color: #1da1f2;
+        margin: 0 0.5px 0 0.5px;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .tarz-sekiz {
+        background-color: #ffaa00;
+        color: #ffaa00;
+        margin: 0 0.5px 0 0.5px;
+        padding: 0;
+        border-radius: 25px 25px 0 0;
+      }
+
+      .part-bir h1,
+      .part-bir a {
+        color: #8241a0;
+      }
+
+      .part-iki h1,
+      .part-iki a {
+        color: #0f4d92;
+      }
+
+      .part-uc h1,
+      .part-uc a {
+        color: #216331;
+      }
+
+      .part-dort h1,
+      .part-dort a {
+        color: #a40000;
+      }
+
+      .part-bes h1,
+      .part-bes a {
+        color: #d95d39;
+      }
+
+      .part-alti h1,
+      .part-alti a {
+        color: #ef545f;
+      }
+
+      .part-yedi h1,
+      .part-yedi a {
+        color: #1da1f2;
+      }
+
+      .part-sekiz h1,
+      .part-sekiz a {
+        color: #ffaa00;
+      }
+
+      .siyahyap {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        word-spacing: 3px;
+        text-align: left;
+      }
+
+      .part-header {
+        font-size: 20px;
+        margin: 20px 20px 20px 20px;
+        font-weight: bolder;
+        font-family: "Montserrat", sans-serif;
+        text-align: justify;
+        /* text-align: left; */
+      }
+
+      .news-header {
+        font-size: 16px;
+        margin: 20px 20px 0px 20px;
+        font-family: "Montserrat", sans-serif;
+        text-align: justify;
+        /* text-align: left; */
+      }
+
+      .news {
+        margin: 0px 20px 20px 20px;
+        line-height: 1.5;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        text-align: inherit;
+        text-align: left;
+      }
+
+      .haber-link {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      .news::before {
+        content: "\2022";
+        font-weight: bolder;
+        display: inline-block;
+      }
+
+      .bize-ulasin {
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        margin: 20px;
+      }
+
+      .tercihleriniz {
+        font-size: 14px;
+        text-align: center;
+        color: gray;
+        margin-bottom: 5px;
+        font-family: "Montserrat", sans-serif;
+        margin: 5px;
+      }
+
+      .mail {
+        text-align: center;
+        color: gray;
+        margin: 12px;
+        font-style: italic;
+        font-size: 12px;
+        display: block;
+      }
+
+      .sosyal-medya {
+        max-width: 45px;
+        max-height: 45px;
+        border: 0;
+        align-items: center;
+        border-radius: 10px;
+        margin: 5px;
+        margin-bottom: 10px;
+      }
+
+      .logolar {
+        max-height: 100px;
+        max-width: 100px;
+        border: 0.5px solid #d8d8d8;
+        border-radius: 10px;
+        margin: 15px;
+      }
+
+      .yukari-çık {
+        display: block;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-family: "Bree Serif", serif;
+        margin-bottom: 5px;
+      }
+
+      .ok {
+        text-decoration: none;
+        font-weight: bolder;
+        color: goldenrod;
+        font-size: 20px;
+      }
+
+      .cubuk {
+        width: 6px;
+      }
+
+      .haber-gorseli-sabit {
+        object-fit: cover;
+        width: 90%;
+        height: 100px;
+        margin: 0px 5px 5px 5px;
+        border-radius: 10px;
+      }
+
+      @media only screen and (min-width: 768px) {
+        /* BİLGİSAYAR GÖRÜNÜMÜ */
+        .resimli-haber {
+          display: flex;
+          width: 100%;
+          /*align-items: center;*/
+        }
+
+        .haber-gorseli {
+          object-fit: cover;
+          width: 30%;
+          margin: 0px 20px 20px 20px;
+          border-radius: 10px;
+          margin-left: 5px;
+        }
+
+        .gif {
+          margin: 40px 10px 10px 10px;
+          margin-left: -10px;
+          width: 200px;
+          border-radius: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        /* MOBİL GÖRÜNÜM */
+        .resimli-haber {
+          width: 100%;
+        }
+
+        .haber-gorseli {
+          object-fit: cover;
+          width: 90%;
+          height: 100px;
+          margin: 5px;
+          margin-top: -10px;
+          border-radius: 10px;
+        }
+
+        .gif {
+          margin: -10px;
+          margin-bottom: 5px;
+          width: 200px;
+          border-radius: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="text-align: inherit; text-align: left; word-spacing: 3px">
+    <!--<body align="center" style="text-align:left; word-spacing: 3px;"> -->
+    <div style="max-width: 600px">
+      <div class="part">
+        <img
+          id="yukari-link"
+          class="main-header"
+          src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/logolar/Genesis-Header.png"
+          alt="Header"
+        />
+        <h2 class="sub-header">
+          HAFTALIK BLOCKCHAIN HABERLERİ <br />
+          <em class="tarih">26.05.2022 #121</em> <br />
+          <a
+            style="font-weight: bold; font-size: 12px; color: goldenrod"
+            target="_blank"
+            href="http://genesisnews.co/#arsiv-home"
+            >BÜLTEN ARŞİVİMİZ</a
+          >
+        </h2>
+        <!--
+      <p class="text"> Haftalık blockchain haber bültenimiz
+        <b>"Genesis"</b>in on birinci sayısından herkese merhabalar! Bu hafta da ilgi çekici haberler ve faydalı
+        olduğunu düşündüğümüz iki online etkinlikle karşınızdayız. Sosyal izolasyon döneminde verimli zaman geçirmek
+        adına katılmanızı öneriyoruz.
+        <br>Bültenimizin yeni sayısı gelene kadar herkese blockchain dolu ve sağlıklı bir hafta diliyoruz. İyi okumalar!
+        <b style="color: goldenrod;">#EvdeKal</b>
+      </p>
+      -->
+        <p class="text genesis">
+          <b style="color: goldenrod">Genesis</b> Bloğu: Bir blockchain ağında
+          kaydedilen ilk bloğa verilen isimdir. "Başlangıç bloğu" da
+          denmektedir.
+        </p>
+        <p class="text">
+          Bu hafta <b>değindiğimiz konuları</b> aşağıda görelim.
+        </p>
+
+        <table class="text" style="padding-left: 50px">
+          <tr>
+            <th>
+              <img
+                class="cubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Teknoloji.png"
+                alt="teknoloji"
+                height="25"
+                width="6"
+              />
+            </th>
+            <th>
+              <p><a class="siyahyap"> Teknoloji </a></p>
+            </th>
+            <!--<th><p> <a class="siyahyap" href="#baslik-bir"> Teknoloji </a></p></th>-->
+          </tr>
+
+          <tr>
+            <th>
+              <img
+                class="cubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Pop%C3%BCler.png"
+                alt="popüler"
+                height="25"
+                width="6"
+              />
+            </th>
+            <!--<th><p> <a class="siyahyap" href="#baslik-iki"> Popüler </a></p></th>-->
+            <th>
+              <p><a class="siyahyap"> Popüler </a></p>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <img
+                class="cubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Uygulama%20Alanlar%C4%B1.png"
+                alt="uygulama alanları"
+                height="25"
+                width="6"
+              />
+            </th>
+            <th>
+              <p><a class="siyahyap"> Uygulama Alanları </a></p>
+            </th>
+            <!--<th><p> <a class="siyahyap" href="#baslik-uc"> Uygulama Alanları </a></p></th>-->
+          </tr>
+
+          <tr>
+            <th>
+              <img
+                class="cubuk"
+                src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Reg%C3%BClasyon-Hukuk.png"
+                alt="regülatif & resmi"
+                height="25"
+                width="6"
+              />
+            </th>
+            <th>
+              <p><a class="siyahyap"> Regülatif & Resmi </a></p>
+            </th>
+            <!--
+          <th>
+            <p> <a class="siyahyap" href="#baslik-dort"> Regülatif & Resmi </a></p>
+          </th>-->
+          </tr>
+          <!--
+        <tr>
+          <th><img class="cubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Etkinlikler.png"
+              alt="etkinlik" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Etkinlik </a></p>
+          </th>
+        </tr>
+      -->
+          <!--
+        <tr>
+          <th><img class="cubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/E%C4%9Fitimler.png"
+              alt="eğitim" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Eğitim </a></p>
+          </th>
+        </tr>
+        -->
+          <!--
+        <tr>
+          <th><img class="cubuk"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Akademik%20Ara%C5%9Ft%C4%B1rma.png"
+              alt="akademik & araştırma" height="25" width="6"></th>
+          <th>
+            <p> <a class="siyahyap"> Akademik & Araştırma </a></p>
+          </th>
+        </tr>
+        -->
+          <!--
+            <tr style="height: 25;">
+                <th><img class="cubuk" src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/yeni%20B%C3%B6l%C3%BCm%20Renk%20%C3%87ubuklar%C4%B1/Anket.png" alt="anket" height="25" width="6"></th>
+                <th><p> <a class="siyahyap" href="#baslik-sekiz"> Anket </a></p></th>
+            </tr style="height: 25">
+          -->
+        </table>
+
+        <p class="text genesis" style="color: goldenrod; text-align: center">
+          Bu bülteni web tarayıcınızda okumak için
+          <a
+            href="http://genesisnews.co/bulten121"
+            style="font-weight: bold; color: goldenrod"
+            target="_blank"
+            >tıklayabilirsiniz.</a
+          >
+        </p>
+      </div>
+
+      <div class="part part-bir">
+        <h4 class="tarz-bir">.</h4>
+        <h1 id="baslik-bir" class="part-header">Teknoloji</h1>
+
+        <article>
+          <h2 class="news-header"> Wormhole, Hacker’a 10 Milyon Dolar Ödül Verdi </h2><br>
+          <div class="resimli-haber">
+              <p class="news"> 24 Şubat'ta satya0x adlı beyaz şapkalı bir hacker, Ethereum üzerindeki Wormhole
+                  çekirdek köprü sözleşmesinde kritik bir hata buldu. Açığın, hiçbir fon etkilenmeden kapatıldığı ve <a class="haber-link" target="_blank" href="https://medium.com/immunefi/wormhole-uninitialized-proxy-bugfix-review-90250c41a43a ">satya0x</a>’e
+                  tarihteki en büyük hata tespit ödülü olan 10 milyon dolar verildiği bildirildi. Böylece Wormhole adına
+                  ImmuneFi tarafından düzenlenen ödüllü hata tespit programı, başarıya ulaşmış oldu.
+              </p>
+              
+              <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;" src="https://miro.medium.com/max/1200/1*qDeUcdhDTPtUKix23WVBRQ.jpeg"
+                  alt="Haber Görseli">
+          </div>
+      </article>
+      <article>
+        <h2 class="news-header"> DAO Yönetimi için Fonlama </h2><br>
+        <p class="news"> Merkeziyetsiz finans alanında bir start-up olan Common, son fonlama turunda toplam 20 milyon dolar
+            yatırım aldı. Şirket bu fonlarla <a class="haber-link" target="_blank" href="https://decrypt.co/100437/common-raises-20m-to-build-dao-management-platform-launch-token ">Commonwealth</a> adlı DAO yönetimi platformlarını geliştirmeye devam edecek.
+            Common, günümüzde 700’den fazla DAO’ya platformu aracılığıyla yönetim sözleşmelerini yayımlama, crowdfund’lar ve
+            sohbet odaları oluşturma olanağı tanıyor.
+        </p>
+        
+    </article>
+    <article>
+      <h2 class="news-header"> Brave, Solana’yı ve Ramp Cüzdanı’nı Destekleyecek </h2><br>
+      <img src="https://pbs.twimg.com/media/FTiNgzvUEAA-VoH?format=jpg&name=small" class="haber-gorseli-sabit" alt="Haber Görseli">
+      <p class="news"> İnternet tarayıcısı Brave, web3’e geçişini sürdürüyor. Brave, yeni güncellemesi ile Solana ağındaki
+          planlarını paylaştı. Yeni tarayıcı sürümünde kullanıcılar, <a class="haber-link" target="_blank"
+          href="https://decrypt.co/101266/brave-adds-solana-support-and-ramp-wallet-functionality-in-latest-browser-update">Brave</a> Wallet ödeme platformu olan Ramp ile SOL ve SPL
+          tokenlarıyla işlem yapabilecekler. Ramp Pazarlama Müdürü Greg McEwan, Ramp entegrasyonuyla kullanıcıların kripto
+          paraları dönüştürmek için daha az zaman harcayacaklarını söyledi.
+      </p>
+      
+  </article>
+      </div>
+
+      <div class="part part-iki">
+        <h4 class="tarz-iki">.</h4>
+        <h1 id="baslik-iki" class="part-header">Popüler</h1>
+
+        <article>
+          <h2 class="news-header"> Balenciaga, Kripto Para ile Ödeme Seçeneği Sunacak </h2><br>
+          <img src="https://blocknity.com/media/2022/05/Haber-Mert-7-1.png" class="haber-gorseli-sabit" alt="Haber Görseli">
+          <p class="news"> Fransız lüks moda devi Balenciaga, ABD’deki bazı seçili mega mağazalarında ve internet sitesinde
+              kripto para ile ödeme seçeneklerini sunmak için planlama yaptıklarını duyurdu. Balenciaga, başlangıçta Ethereum
+              ve <a class="haber-link" target="_blank" href="https://blockchain.news/news/french-luxury-giant-balenciaga-rolls-out-crypto-payment-options">Bitcoin</a>’i kabul edeceklerini, zamanla diğer kripto paraları ekleyeceklerini duyurdular. Balenciaga, uzun
+              vadeli hedefler koydukları için kripto paralardaki fiyat dalgalanmalarından endişe duymadıklarını belirtiyor.
+              Benzer bir şekilde lüks marka devi olan Gucci de ayın sonunda kripto para ödemelerine izin vermeyi planlıyor.
+          </p>
+          
+      </article>
+      <article>
+        <h2 class="news-header"> Beeple’ın Twitter Hesabı Hacklendi </h2><br>
+        <p class="news"> Beeple adıyla tanınan ünlü NFT sanatçısı Mike Winkelmann’ın Twitter hesabı hacklendi. Saldırganlar
+            tarafından yapılan sahte duyuru, insanların profildeki bağlantıyla kötücül siteye yönlendirilmesine sebep oldu.
+            Bu siteyle etkileşime giren kullanıcıların cüzdanlarından 1 <a class="haber-link" target="_blank" href="https://decrypt.co/101093/nft-artist-beeples-twitter-account-hacked-in-phishing-scam ">Ether</a> çalındı. Saldırı sonucu yaklaşık yetmiş bin
+            dolar değerinde Ether çalındı.
+        </p>
+        
+    </article>
+    <article>
+      <h2 class="news-header"> Audi, Yeni NFT’lerini Sergiledi </h2><br>
+      <div class="resimli-haber">
+          <p class="news"> NFT’ler, tek parça halindeki “The Art of Progress” sanat eserinin küçük parçalarından oluşacak.
+              The Art of Progress, Alman İnternet Pazarlama Etkinliği’nde bir küp sanat enstalasyonu üzerinde sergilendi.
+              Dijital sanat eseri 50.000€ fiyatla satışa çıkarıldı. İsteyen kullanıcılar ise <a class="haber-link" target="_blank" href="https://www.ledgerinsights.com/audi-launches-novel-fractional-nft/">Timless</a> Şirket'i vasıtasıyla
+              50€ hisse şeklinde bir parçasına sahip olabiliyor.
+          </p>
+          
+          <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;" src="https://the-art-of-progress.fra1.digitaloceanspaces.com/8a7d87b938c8ba5a1a2e34082002cd05.jpg"
+              alt="Haber Görseli">
+      </div>
+  </article>
+      </div>
+
+      <div class="part part-uc">
+        <h4 class="tarz-uc">.</h4>
+        <h1 id="baslik-uc" class="part-header">Uygulama Alanları</h1>
+
+        <article>
+          <h2 class="news-header"> Filmleri Finanse Etmek için NFT’ler Kullanılacak </h2><br>
+          <div class="resimli-haber">
+              <p class="news"> Efsane film yapımcısı Spike Lee, 1986 yapımı “She’s Gotta Have” filminden hareketsiz
+                  görüntülerin yer aldığı Ethereum NFT’leri yayımlayacak. Lee’nin NFT’leri ile Visible Project platformu
+                  vasıtasıyla genç yönetmenler desteklenecek. NFT sahipleri, platformda hangi filmlerin finanse
+                  edilebileceğine karar verebilecek. <a class="haber-link" target="_blank" href="https://decrypt.co/101021/spike-lee-nfts-films-veecon">Visible</a> Project kurucu ortağı Eliot Greene, kısa filmleri finanse
+                  edeceklerini ve NFT’ler ile oy kullanılabilen merkeziyetsiz bir film stüdyosu oluşturduklarını söyledi.
+              </p>
+              
+              <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;" src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2022%2F04%2Fspike-lee-the-visible-project-mars-blackmon-shes-gotta-have-it-nft-collection-release-info-002.jpg?q=75&w=800&cbr=1&fit=max"
+                  alt="Haber Görseli">
+          </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Wembley Stadyumu, Blockchain Kullanmaya Başlıyor </h2><br>
+        <p class="news"> İngiltere’deki çok amaçlı kullanılan ünlü Wembley Stadyumu, satılacak biletler için artık
+            blockchain çözümü olan TIXNGO’yu kullanacak. Blockchain teknolojisi aracılığıyla satılacak biletlerin en büyük
+            getirisi ise sahteciliği ortadan kaldırması. Yeni benimsenen uygulamanın, ileri tarihli <a class="haber-link" target="_blank" href="https://www.ledgerinsights.com/uks-wembley-stadium-adopts-blockchain-ticketing-tixngo-starting-with-sheeran-concert/ ">Ed Sheeran</a> konserinde
+            kullanılması planlanıyor.
+        </p>
+        
+    </article>
+      </div>
+
+      <div class="part part-dort">
+        <h4 class="tarz-dort">.</h4>
+        <h1 id="baslik-dort" class="part-header">Regülatif & Resmi</h1>
+
+        <article>
+          <h2 class="news-header"> Brezilya, Kripto Para Ticaretine Vergi Koyuyor </h2><br>
+          <div class="resimli-haber">
+              <p class="news"> Brezilya Federal Rezervi, kripto varlık piyasasındaki Brezilyalı yatırımcılara, benzer türden
+                  kripto paraların değişimlerini içeren işlemlerde gelir vergisi ödemesi gerektiğini açıkladı. <a class="haber-link" target="_blank" href=" https://cointelegraph.com/news/brazil-s-federal-revenue-now-requires-citizens-to-pay-taxes-on-like-kind-crypto-trades">Federal</a> Rezerv,
+                  kripto paralarla hesaplanan sermaye kazancının, bir diğer kripto varlığın satın alımında kullanıldığında
+                  gelir vergisi ile vergilendirileceğini duyurdu. Yer alan vergi düzenlemesi duyuruda 35 bin BRL’den fazla
+                  ticaret yapan yatırımcılar için geçerli olacak.
+              </p>
+              
+              <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;" src="https://cloudfront-us-east-1.images.arcpublishing.com/coindesk/6A6INCPZZREONCVD26JEAPBU4I.jpg"
+                  alt="Haber Görseli">
+          </div>
+      </article>
+      <article>
+        <h2 class="news-header"> Blockchain Tabanlı Dijital Tahvil </h2><br>
+        <p class="news"> Filipinler’in en büyük bankası UnionBank, dağınık defter teknolojisinden faydalanarak toplamda on
+            dokuz milyon dolar değerinde 1.5 yıl sürecek yıllık %3.25 faiz ile <a class="haber-link" target="_blank" href="https://www.ledgerinsights.com/unionbank-philippines-issues-blockchain-based-digital-bond/">tahvil</a> sunacak. Projede blockchain
+            teknolojisi, tahvillerin kayıtlarının tutulması için kullanılacak.
+        </p>
+        
+    </article>
+      </div>
+
+      <!--
+    <div class="part part-bes">
+      <h4 class="tarz-bes">.</h4>
+      <h1 id="baslik-bes" class="part-header"> Etkinlik </h1>
+
+    </div>
+  -->
+
+      <!--
+    <div class="part part-alti">
+      <h4 class="tarz-alti">.</h4>
+      <h1 id="baslik-alti" class="part-header"> Eğitim </h1>
+
+    </div>
+    -->
+
+      <!--
+    <div class="part part-yedi">
+      <h4 class="tarz-yedi">.</h4>
+      <h1 id="baslik-yedi" class="part-header"> Akademik & Araştırma </h1>
+
+    </div>
+
+  -->
+
+      <!-- BURADAKİ OK KALKACAK
+    <div class="part-sekiz">
+        <h4 class="tarz-sekiz">.</h4>
+        <h1 id="baslik-sekiz" class="part-header part-sekiz"> Anket </h1>
+        <a class="yukari-çık ok" href="#yukari-link"> ^</a>
+    </div>
+    -->
+
+      <div class="part">
+        <h1 class="bize-ulasin">Bize Ulaşın</h1>
+        <div>
+          <a
+            href="https://dar.vin/genesis-twitter"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <img
+              class="sosyal-medya"
+              style="max-width: 60px"
+              title="Twitter'da Biz"
+              alt="Twitter'da Biz"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-twitter.png"
+            />
+          </a>
+          <!-- <a
+            href="https://dar.vin/genesis-instagram"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <img
+              class="sosyal-medya"
+              style="max-width: 60px"
+              title="Instagram"
+              alt="Instagram'da Biz"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-instagram.png"
+            />
+          </a> -->
+          <a
+            href="https://dar.vin/genesis-linkedin"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <img
+              class="sosyal-medya"
+              style="max-width: 60px"
+              title="Linkedin"
+              alt="LinkedIn'de Biz"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-linkedin.png"
+            />
+          </a>
+        </div>
+        <p class="tercihleriniz">
+          <a
+            class="tercihleriniz"
+            href="mailto:?subject=Genesis&nbspBlockchain&nbspHaber&nbspBülteni&body=Merhabalar.&nbspGenesis,&nbspblockchain&nbsphakkında&nbspdünyada&nbspve&nbspTürkiye'deki&amp;nbspönemli&nbsphaberlerin&nbsptoplandığı&nbsphaftalık&nbspbir&nbsphaber&nbspbültenidir.&nbspKaydolmak&nbspiçin&nbsplinke&nbsptıklayabilirsiniz.&nbspKayıt&nbspLinki:&nbspgenesisnews.co"
+          >
+            Bülteni Mail ile Paylaşın</a
+          >
+        </p>
+        <p class="tercihleriniz">
+          <a
+            class="tercihleriniz"
+            href="https://wa.me/?text=Haftalık%20blockchain%20haber%20bülteni%20www.genesisnews.co"
+          >
+            Bülteni Whatsapp ile Paylaşın
+          </a>
+        </p>
+        <a
+          class="tercihleriniz"
+          target="_blank"
+          href="mailto:info@genesisnews.co?subject=Geri&nbspBildirim"
+        >
+          Görüşlerinizi Bizle Paylaşın</a
+        >
+
+        <div>
+          <a
+            href="http://www.instagram.com/inkube/"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <img
+              class="inkube logolar"
+              style="max-width: 150px"
+              title="Inkube-Instagram"
+              alt="Inkube Logo"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-inkube.png"
+            />
+          </a>
+          <a
+            href="http://www.instagram.com/deconsensus/"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <img
+              class="decons logolar"
+              style="max-width: 150px"
+              title="Decons-Instagram"
+              alt="Decons Logo"
+              src="https://raw.githubusercontent.com/blockchainhaber/Genesis/master/ayarlanm%C4%B1%C5%9F%20logolar/Y-logo-decons.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--part 
+  
+    RESİMSİZ HABER TEMPLATE
+    <article>
+        <h2 class="news-header">  </h2><br>
+        <p class="news">
+        </p>
+        <a class="haber-link" target="_blank" href=""></a>
+    </article>
+
+    <article>
+        <h2 class="news-header">  </h2><br>
+        <img src="" class="haber-gorseli-sabit" alt="Haber Görseli">
+        <p class="news">
+        </p>
+        <a class="haber-link" target="_blank" href=""></a>
+    </article>
+
+    RESİMLİ  HABER TEMPLATE
+    <article>
+            <h2 class="news-header">  </h2><br>
+            <div class="resimli-haber">
+              <p class="news"> 
+              </p>
+              <a class="haber-link" target="_blank" href=""></a>
+              <img class="haber-gorseli" style="max-height: 300px; max-height: 300px;border-radius: 10px;"
+                src="" alt="Haber Görseli">
+            </div>
+    </article>
+
+    GİF TEMPLATE
+    <article>
+            <h2 class="news-header">  </h2><br>
+            <div class="resimli-haber">
+              <p class="news"> 
+              </p>
+              <a class="haber-link" target="_blank" href=""></a> 
+              <img class="gif" style="max-height: 200px; max-width: 200px;" src="" alt="Haber Gifi">
+            </div>
+    </article>
+
+-->
+  </body>
+</html>
